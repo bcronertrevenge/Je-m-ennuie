@@ -12,6 +12,18 @@ public class JemennuieActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jemennuie);
+
+        System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
+
+        Game game = new Game();
+        game.newGame();
+
+        game.answerQuestion(Answer.Yes);
+        game.answerQuestion(Answer.NoMatter);
+        game.answerQuestion(Answer.No);
     }
 
 
