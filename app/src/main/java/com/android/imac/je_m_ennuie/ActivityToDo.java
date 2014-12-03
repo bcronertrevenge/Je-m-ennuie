@@ -5,15 +5,17 @@ package com.android.imac.je_m_ennuie;
  */
 public class ActivityToDo {
     String nameActivity;
+    int idActivity;
 
-    ActivityToDo(String name)
+    ActivityToDo(String name, int id)
     {
+        idActivity = id;
         nameActivity = name;
     }
 
-    int getImpact(Question question)
+    Answer getImpact(DataBase dataBase, Question question)
     {
-        return 1;
+        return dataBase.getImpactActivity(idActivity, question);
     }
 
     String getNameActivity() { return nameActivity; }

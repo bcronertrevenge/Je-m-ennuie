@@ -3,6 +3,7 @@ package com.android.imac.je_m_ennuie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
 
 /**
@@ -12,13 +13,13 @@ public class Game {
 
     public static final int NB_QUESTIONS_PER_ROUND = 3;
     public static final int NB_ROUND = 2;
-    public static final int NB_ACTIVITIES_TO_SHOW = 3;
+    public static final int NB_ACTIVITIES_TO_SHOW = 10;
 
-    ArrayList<ActivityToDo> activityGameArray;
+    LinkedList<ActivityToDo> activityGameArray;
     ArrayList<Question> questionGameArray;
     DataBase dataBase;
     HashMap< Question, Answer > questionAnsweredMap;
-    ArrayList<ActivityToDo> activityToShowArray;
+    LinkedList<ActivityToDo> activityToShowArray;
     int roundNumber;
     int nbQuestionAnswered;
     int idCurrentQuestion;
@@ -26,10 +27,10 @@ public class Game {
     Game()
     {
         dataBase = new DataBase();
-        activityGameArray = new ArrayList<ActivityToDo>();
+        activityGameArray = new LinkedList<ActivityToDo>();
         questionGameArray = new ArrayList<Question>();
         questionAnsweredMap = new HashMap<Question, Answer>();
-        activityToShowArray = new ArrayList<ActivityToDo>();
+        activityToShowArray = new LinkedList<ActivityToDo>();
 
         dataBase.initialize();
         roundNumber = 0;
@@ -42,7 +43,7 @@ public class Game {
         activityGameArray.clear();
         questionGameArray.clear();
 
-        activityGameArray = (ArrayList<ActivityToDo>)dataBase.getActivityDBArray().clone();
+        activityGameArray = (LinkedList<ActivityToDo>)dataBase.getActivityDBArray().clone();
         questionGameArray = (ArrayList<Question>)dataBase.getQuestionDBArray().clone();
 
         questionAnsweredMap.clear();
@@ -90,24 +91,23 @@ public class Game {
 
         System.out.println("Round " + roundNumber);
 
-        //Test print
-        for(Map.Entry<Question, Answer> entry : questionAnsweredMap.entrySet()) {
-            Question key = entry.getKey();
-            Answer value = entry.getValue();
-
-            System.out.println(key.getNameQuestion() + " : " + value.toString());
-        }
-
         // Remove des activities à faire
+        removeActivities();
 
         //Selection des activités à montrer
         searchPossibleActivities();
-        for(ActivityToDo act : activityToShowArray)
-        {
-            System.out.println("Activité : " + act);
-        }
 
-        activityToShowArray.clear();
+        if( activityToShowArray.size() > 0 )
+        {
+            for(ActivityToDo act : activityToShowArray)
+            {
+                System.out.println("Activité : " + act);
+            }
+        }
+        else
+        {
+            System.out.println("Désolé, aucune activité à proposer");
+        }
 
         if( roundNumber >= NB_ROUND )
         {
@@ -115,14 +115,53 @@ public class Game {
         }
     }
 
+    void removeActivities()
+    {
+        for(Map.Entry<Question, Answer> entry : questionAnsweredMap.entrySet()) {
+            Question question = entry.getKey();
+            Answer answer = entry.getValue();
+
+            System.out.println(question.getNameQuestion() + " : " + answer.toString());
+
+            //Si le joueur a répondu peu importe, on supprime aucune activité
+            if( answer == Answer.NoMatter )
+                continue;
+
+            LinkedList<ActivityToDo> activitiesToSupress = new LinkedList<ActivityToDo>();
+
+            for(ActivityToDo activityToDo : activityGameArray )
+            {
+                Answer impact = activityToDo.getImpact(dataBase, question);
+
+                if( impact != Answer.NoMatter && impact != answer )
+                {
+                    //Remove
+                    //activityGameArray.remove(activityToDo);
+                    activitiesToSupress.push(activityToDo);
+                    System.out.println("Activité " + activityToDo + " supprimée");
+                }
+            }
+
+            for(ActivityToDo activityToSupress : activitiesToSupress)
+            {
+                activityGameArray.remove(activityToSupress);
+            }
+
+            activitiesToSupress.clear();
+        }
+    }
+
     void searchPossibleActivities()
     {
+        activityToShowArray.clear();
+
         if(activityGameArray.size() <= NB_ACTIVITIES_TO_SHOW)
         {
-            activityToShowArray = activityGameArray;
+            activityToShowArray = (LinkedList<ActivityToDo>)activityGameArray.clone();
         }
         else
         {
+            //On mélange et on prend les NB_ACTIVITIES_TO_SHOW premiers
             Collections.shuffle(activityGameArray);
             for(int i=0; i < NB_ACTIVITIES_TO_SHOW; ++i)
             {
