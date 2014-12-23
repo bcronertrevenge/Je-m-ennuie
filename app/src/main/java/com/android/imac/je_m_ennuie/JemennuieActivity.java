@@ -1,9 +1,13 @@
 package com.android.imac.je_m_ennuie;
 
+
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class JemennuieActivity extends ActionBarActivity {
@@ -16,6 +20,18 @@ public class JemennuieActivity extends ActionBarActivity {
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
+        /* Loading the fonts */
+        Button button1 = (Button) findViewById(R.id.button1);
+        Button button2 = (Button) findViewById(R.id.button2);
+        Button button3 = (Button) findViewById(R.id.button3);
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
+
+        button1.setTypeface(font);
+        button2.setTypeface(font);
+        button3.setTypeface(font);
+
 
 
         Game game = new Game();

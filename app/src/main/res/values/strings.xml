@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">Je-m-ennuie</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="home_button1">Jouer</string>
+    <string name="home_button2">Mes activités</string>
+    <string name="home_button3">Quitter</string>
     <string name="action_settings">Settings</string>
 
 </resources>
