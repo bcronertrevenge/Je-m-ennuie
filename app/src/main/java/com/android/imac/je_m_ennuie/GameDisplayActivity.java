@@ -17,8 +17,10 @@ public class GameDisplayActivity extends Activity {
 
          /* Loading the fonts */
         TextView question = (TextView) findViewById(R.id.question);
+        TextView number_question = (TextView) findViewById(R.id.number_question);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
 
         question.setTypeface(font);
+        number_question.setTypeface(font);
     }
 }

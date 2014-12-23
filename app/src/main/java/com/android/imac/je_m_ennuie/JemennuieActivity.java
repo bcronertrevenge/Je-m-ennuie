@@ -49,7 +49,7 @@ public class JemennuieActivity extends ActionBarActivity {
 
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("Quitter");
+                finish();
             }
         });
 
