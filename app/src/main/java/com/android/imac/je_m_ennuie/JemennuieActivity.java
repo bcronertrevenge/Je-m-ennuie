@@ -1,6 +1,7 @@
 package com.android.imac.je_m_ennuie;
 
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -35,7 +36,8 @@ public class JemennuieActivity extends ActionBarActivity {
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("Page jouer");
+                Intent intent = new Intent(JemennuieActivity.this, GameDisplayActivity.class);
+                startActivity(intent);
             }
         });
 
