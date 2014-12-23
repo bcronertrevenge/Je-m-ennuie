@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -31,6 +32,24 @@ public class JemennuieActivity extends ActionBarActivity {
         button1.setTypeface(font);
         button2.setTypeface(font);
         button3.setTypeface(font);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Page jouer");
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Page Mes activités");
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Quitter");
+            }
+        });
 
 
 
