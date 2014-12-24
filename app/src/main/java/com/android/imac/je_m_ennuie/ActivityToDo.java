@@ -20,6 +20,11 @@ public class ActivityToDo {
 
     String getNameActivity() { return nameActivity; }
 
+    // à modifier en fonction de la BDD
+    public boolean isFavorite(){
+        return false;
+    }
+
     @Override
     public String toString() {
         return nameActivity;

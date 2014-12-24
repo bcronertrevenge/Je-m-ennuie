@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Souhaites tu faire une activité artistique ou ludique?"
-        android:textSize="36dp"
+        android:textSize="33sp"
         android:textColor="#ffffffff"
         android:gravity="center_horizontal"
         android:layout_marginLeft="10dp"
@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         >
 
         <Button
@@ -36,9 +36,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffff9016"
-            android:layout_margin="8dp"
+            android:layout_margin="4dp"
             android:textColor="#ffffffff"
-            android:textSize="22sp"
+            android:textSize="20sp"
             />
 
         <Button
@@ -47,9 +47,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffff9016"
-            android:layout_margin="8dp"
+            android:layout_margin="4dp"
             android:textColor="#ffffffff"
-            android:textSize="22sp"/>
+            android:textSize="20sp"
+            />
 
         <Button
             android:id="@+id/button3"
@@ -57,9 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffff9016"
-            android:layout_margin="8dp"
+            android:layout_margin="4dp"
             android:textColor="#ffffffff"
-            android:textSize="22sp"/>
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/number_question"

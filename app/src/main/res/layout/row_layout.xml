@@ -2,8 +2,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
-    android:padding="6dip" >
+    android:layout_height="50dp"
+    android:padding="1dp" >
 
     <ImageView
         android:id="@+id/icon"
@@ -11,8 +11,8 @@
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="6dip"
-        android:src="@drawable/ic_launcher" />
+        android:layout_marginRight="10dip"
+        android:src="@drawable/full_star" />
 
     <TextView
         android:id="@+id/activity_name"
@@ -21,8 +21,9 @@
         android:gravity="center_vertical"
         android:layout_toRightOf="@id/icon"
         android:singleLine="true"
-        android:text="Je suis une activité très longue"
-        android:textSize="20sp" />
+        android:text="Nom de l'activité"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
 
 
 
