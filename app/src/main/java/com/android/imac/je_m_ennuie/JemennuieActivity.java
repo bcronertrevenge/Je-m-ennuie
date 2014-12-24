@@ -43,7 +43,8 @@ public class JemennuieActivity extends ActionBarActivity {
 
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("Page Mes activités");
+                Intent intent = new Intent(JemennuieActivity.this, ListActivitiesActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ff73b4eb"
+    android:gravity="center_vertical"
+    tools:context=".ActivityListActivity"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/title_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_list"
+        android:textColor="#ffffffff"
+        android:textSize="26dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+    />
+
+    <ListView
+        android:id="@+id/list_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textColor="#ffffffff">
+
+        </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:gravity="center_horizontal"
+        android:text="10 activités /50"/>
+
+</LinearLayout>

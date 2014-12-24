@@ -19,7 +19,10 @@
         </activity>
         <activity
             android:name=".GameDisplayActivity"
-            android:label="@string/title_activity_game_display" />
+            android:label="@string/title_game_display" />
+        <activity
+            android:name=".ListActivitiesActivity"
+            android:label="@string/title_activity_list" />
     </application>
 
 </manifest>

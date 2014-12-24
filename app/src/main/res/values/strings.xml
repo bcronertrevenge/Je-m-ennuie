@@ -3,7 +3,7 @@
 
     <!-- TITRES -->
     <string name="app_name">Application Je m\'ennuie</string>
-    <string name="title_activity_game_display">Début du jeu</string>
+    <string name="title_game_display">Début du jeu</string>
 
     <!-- ACCUEIL -->
     <string name="home_button1">Jouer</string>
@@ -15,5 +15,9 @@
     <string name="answer_yes">Carrément !</string>
     <string name="answer_maybe">Peut être...</string>
     <string name="answer_no">Tu rêves !</string>
+
+    <!-- MES ACTIVITES -->
+    <string name="title_activity_list">Mes activités</string>
+
 
 </resources>
