@@ -2,6 +2,7 @@ package com.android.imac.je_m_ennuie;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -47,7 +48,8 @@ public class ListActivitiesActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
-                System.out.println("coucou");
+                Intent intent = new Intent(ListActivitiesActivity.this, DetailedActivityActivity.class);
+                startActivity(intent);
             }
 
         });

@@ -18,6 +18,7 @@
 
     <!-- MES ACTIVITES -->
     <string name="title_activity_list">Mes activités</string>
+    <string name="title_activity_detailed">Détail de l\'activité</string>
 
 
 </resources>

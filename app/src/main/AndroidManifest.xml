@@ -23,6 +23,9 @@
         <activity
             android:name=".ListActivitiesActivity"
             android:label="@string/title_activity_list" />
+        <activity
+            android:name=".DetailedActivityActivity"
+            android:label="@string/title_activity_detailed" />
     </application>
 
 </manifest>
