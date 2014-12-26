@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 /**
  * Created by Marie on 26/12/2014.
@@ -33,19 +35,19 @@ public class DetailedActivityActivity extends Activity {
         /* Click events */
         btn_facebook.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("Partage Facebook");
+                Toast.makeText(getApplicationContext(), "Partage Facebook", Toast.LENGTH_SHORT).show();
             }
         });
 
         btn_twitter.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("Partage Twitter");
+                Toast.makeText(getApplicationContext(), "Partage Twitter", Toast.LENGTH_SHORT).show();
             }
         });
 
         btn_gmail.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("Partage Google");
+                Toast.makeText(getApplicationContext(), "Partage Google", Toast.LENGTH_SHORT).show();
             }
         });
     }
