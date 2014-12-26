@@ -28,7 +28,7 @@
             android:background="#ffff9016"
             android:layout_margin="5dp"
             android:textColor="#fff6f6f6"
-            android:textSize="22sp"
+            android:textSize="25sp"
             />
 
         <Button
@@ -39,7 +39,7 @@
             android:background="#ffff9016"
             android:layout_margin="5dp"
             android:textColor="#fff6f6f6"
-            android:textSize="22sp"/>
+            android:textSize="25sp"/>
 
         <Button
             android:id="@+id/button3"
@@ -49,7 +49,7 @@
             android:background="#ffff9016"
             android:layout_margin="5dp"
             android:textColor="#fff6f6f6"
-            android:textSize="22sp"/>
+            android:textSize="25sp"/>
 
         </LinearLayout>
 
