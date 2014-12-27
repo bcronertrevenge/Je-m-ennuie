@@ -20,5 +20,10 @@
     <string name="title_activity_list">Mes activités</string>
     <string name="title_activity_detailed">Détail de l\'activité</string>
 
+    <!-- RESULTATS -->
+    <string name="title_result">Résultat</string>
+    <string name="button_ok">Super idée !</string>
+    <string name="button_next">Trouve moi autre chose</string>
+
 
 </resources>

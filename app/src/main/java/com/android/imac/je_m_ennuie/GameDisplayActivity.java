@@ -80,7 +80,7 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
             }
             // Sinon on loade le résultat
             else{
-                Intent intent = new Intent(this, DetailedActivityActivity.class);
+                Intent intent = new Intent(this, ResultDisplayActivity.class);
                 startActivity(intent);
             }
         }
