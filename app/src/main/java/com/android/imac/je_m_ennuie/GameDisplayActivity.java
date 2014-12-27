@@ -3,7 +3,11 @@ package com.android.imac.je_m_ennuie;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,6 +63,11 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
         question.setTypeface(font);
         number_question.setTypeface(font);
 
+        /* Changement de couleur au clic */
+        button_yes.setBackgroundResource(R.drawable.selector);
+        button_maybe.setBackgroundResource(R.drawable.selector);
+        button_no.setBackgroundResource(R.drawable.selector);
+
         /* Evenements au clic */
         button_yes.setOnClickListener(this);
         button_maybe.setOnClickListener(this);
@@ -71,6 +80,7 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
     public void onClick(View v) {
 
         if(v==button_yes || v==button_maybe || v==button_no){
+
             // Si on est en dessous de 10 questions
             if(num_question<10) {
                 question.setText(questions[num_question]);
@@ -80,6 +90,8 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
             }
             // Sinon on loade le résultat
             else{
+                //On finit l'activité jeu
+                GameDisplayActivity.this.finish();
                 Intent intent = new Intent(this, ResultDisplayActivity.class);
                 startActivity(intent);
             }

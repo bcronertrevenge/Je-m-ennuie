@@ -34,6 +34,10 @@
         <activity
             android:name=".ResultDisplayActivity"
             android:label="@string/title_result" />
+        <!-- Affichage quand plus de résultats -->
+        <activity
+            android:name=".NoMoreResultActivity"
+            android:label="@string/title_nomoreresult" />
     </application>
 
 </manifest>

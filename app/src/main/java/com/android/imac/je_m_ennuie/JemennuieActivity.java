@@ -23,17 +23,23 @@ public class JemennuieActivity extends ActionBarActivity {
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
-        /* Loading the fonts */
+        /* Récupération des éléments de la vue */
         Button button1 = (Button) findViewById(R.id.button1);
         Button button2 = (Button) findViewById(R.id.button2);
         Button button3 = (Button) findViewById(R.id.button3);
 
+        /* On charge la bonne police */
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
-
         button1.setTypeface(font);
         button2.setTypeface(font);
         button3.setTypeface(font);
 
+        /* Changement de couleur au clic */
+        button1.setBackgroundResource(R.drawable.selector);
+        button2.setBackgroundResource(R.drawable.selector);
+        button3.setBackgroundResource(R.drawable.selector);
+
+        /* Evenements au clic */
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(JemennuieActivity.this, GameDisplayActivity.class);

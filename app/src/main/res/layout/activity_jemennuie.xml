@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ff73b4eb"
+    android:background="@color/background_color"
     tools:context=".JemennuieActivity">
 
 
@@ -25,9 +25,9 @@
             android:text="@string/home_button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
+            android:background="@color/button_normal"
             android:layout_margin="5dp"
-            android:textColor="#fff6f6f6"
+            android:textColor="@color/text_color"
             android:textSize="25sp"
             />
 
@@ -36,9 +36,9 @@
             android:text="@string/home_button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
+            android:background="@color/button_normal"
             android:layout_margin="5dp"
-            android:textColor="#fff6f6f6"
+            android:textColor="@color/text_color"
             android:textSize="25sp"/>
 
         <Button
@@ -46,9 +46,9 @@
             android:text="@string/home_button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
+            android:background="@color/button_normal"
             android:layout_margin="5dp"
-            android:textColor="#fff6f6f6"
+            android:textColor="@color/text_color"
             android:textSize="25sp"/>
 
         </LinearLayout>

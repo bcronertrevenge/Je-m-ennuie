@@ -49,6 +49,10 @@ public class ResultDisplayActivity extends Activity implements View.OnClickListe
         btn_ok.setTypeface(font);
         btn_next.setTypeface(font);
 
+        /* Changement de couleur au clic */
+        btn_ok.setBackgroundResource(R.drawable.selector);
+        btn_next.setBackgroundResource(R.drawable.selector);
+
         /* Evenements au clic */
         btn_ok.setOnClickListener(this);
         btn_next.setOnClickListener(this);
@@ -67,9 +71,9 @@ public class ResultDisplayActivity extends Activity implements View.OnClickListe
                 result.setText(results[num_result]);
                 num_result++;
             }
-            // Sinon on loade le résultat
+            // Sinon on dit qu'il n 'y a plus de résultat :(
             else{
-                Intent intent = new Intent(this, DetailedActivityActivity.class);
+                Intent intent = new Intent(this, NoMoreResultActivity.class);
                 startActivity(intent);
             }
 
