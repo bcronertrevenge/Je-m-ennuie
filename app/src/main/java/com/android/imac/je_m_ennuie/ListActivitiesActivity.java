@@ -19,6 +19,7 @@ import java.util.HashMap;
  */
 public class ListActivitiesActivity extends Activity {
 
+    final String EXTRA_FAVORITE = "is_favorite";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +37,8 @@ public class ListActivitiesActivity extends Activity {
                 "Activité 4", "Activité 5", "Activité 6", "Activité 7", "Activité 8",
                 "Activité 9", "Activité 10", "Activité 11", "Activité 12"};
 
+        final Boolean favorite=false;
+
         final ArrayList<String> list = new ArrayList<String>();
         for (int i = 0; i < values.length; ++i) {
             list.add(values[i]);
@@ -49,34 +52,12 @@ public class ListActivitiesActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
                 Intent intent = new Intent(ListActivitiesActivity.this, DetailedActivityActivity.class);
+                intent.putExtra(EXTRA_FAVORITE,favorite);
                 startActivity(intent);
             }
 
         });
     }
 
-    private class StableArrayAdapter extends ArrayAdapter<String> {
 
-        HashMap<String, Integer> mIdMap = new HashMap<String, Integer>();
-
-        public StableArrayAdapter(ListActivitiesActivity context, int textViewResourceId,
-                                  ArrayList<String> objects) {
-            super(context, textViewResourceId, objects);
-            for (int i = 0; i < objects.size(); ++i) {
-                mIdMap.put(objects.get(i), i);
-            }
-        }
-
-        @Override
-        public long getItemId(int position) {
-            String item = getItem(position);
-            return mIdMap.get(item);
-        }
-
-        @Override
-        public boolean hasStableIds() {
-            return true;
-        }
-
-    }
 }

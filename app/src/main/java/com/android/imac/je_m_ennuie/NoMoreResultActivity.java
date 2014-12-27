@@ -39,7 +39,8 @@ public class NoMoreResultActivity extends Activity {
         /* Evenements au clic */
         btn_back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                NoMoreResultActivity.this.finish();
+                Intent intent = new Intent(NoMoreResultActivity.this, ResultDisplayActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -52,6 +53,8 @@ public class NoMoreResultActivity extends Activity {
 
         btn_myactivities.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                //On supprime l'activité No more result
+                NoMoreResultActivity.this.finish();
                 Intent intent = new Intent(NoMoreResultActivity.this, ListActivitiesActivity.class);
                 startActivity(intent);
             }

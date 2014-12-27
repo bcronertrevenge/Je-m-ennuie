@@ -14,7 +14,15 @@ import android.widget.Toast;
 /**
  * Created by Marie on 26/12/2014.
  */
-public class DetailedActivityActivity extends Activity {
+public class DetailedActivityActivity extends Activity implements View.OnClickListener {
+    final String EXTRA_FAVORITE = "is_favorite";
+    Button btn_facebook;
+    Button btn_twitter;
+    Button btn_gmail;
+    Button btn_favorite;
+    Intent intent;
+    boolean is_favorite;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +30,12 @@ public class DetailedActivityActivity extends Activity {
 
         /* Récupération des éléments de la vue */
         TextView title_activity = (TextView) findViewById(R.id.title_activity_detailed);
-        Button btn_facebook = (Button) findViewById(R.id.btn_facebook);
-        Button btn_twitter = (Button) findViewById(R.id.btn_twitter);
-        Button btn_gmail = (Button) findViewById(R.id.btn_gmail);
-        Button btn_favorite = (Button) findViewById(R.id.btn_favorite);
+        btn_facebook = (Button) findViewById(R.id.btn_facebook);
+        btn_twitter = (Button) findViewById(R.id.btn_twitter);
+        btn_gmail = (Button) findViewById(R.id.btn_gmail);
+        btn_favorite = (Button) findViewById(R.id.btn_favorite);
+        intent = getIntent();
+        is_favorite=intent.getBooleanExtra(EXTRA_FAVORITE,false);
 
         /* On charge la bonne police */
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
@@ -35,23 +45,42 @@ public class DetailedActivityActivity extends Activity {
         /* Changement de couleur au clic */
         btn_favorite.setBackgroundResource(R.drawable.selector);
 
+        /* Changement du bouton favori en fonction de l'activité */
+        if (is_favorite){
+            btn_favorite.setText("Retirer des favoris");
+        // Sinon
+        }else{
+            btn_favorite.setText("Ajouter aux favoris");
+        }
+
         /* Evenements au clic */
-        btn_facebook.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Partage Facebook", Toast.LENGTH_SHORT).show();
-            }
-        });
+        btn_facebook.setOnClickListener(this);
+        btn_twitter.setOnClickListener(this);
+        btn_gmail.setOnClickListener(this);
+        btn_favorite.setOnClickListener(this);
+    }
 
-        btn_twitter.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Partage Twitter", Toast.LENGTH_SHORT).show();
-            }
-        });
+    @Override
+    public void onClick(View v) {
+        if(v==btn_facebook)
+            Toast.makeText(getApplicationContext(), "Partage Facebook", Toast.LENGTH_SHORT).show();
 
-        btn_gmail.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Partage Google", Toast.LENGTH_SHORT).show();
+        if(v==btn_twitter)
+            Toast.makeText(getApplicationContext(), "Partage Twitter", Toast.LENGTH_SHORT).show();
+
+        if(v==btn_gmail)
+            Toast.makeText(getApplicationContext(), "Partage Google", Toast.LENGTH_SHORT).show();
+
+        if(v==btn_favorite)
+            if(is_favorite){
+                btn_favorite.setText("Ajouter aux favoris");
+                is_favorite=false;
+                //fonction pour retirer des favoris
+            }else{
+                btn_favorite.setText("Retirer des favoris");
+                is_favorite=true;
+                //fonction pour ajouter des favoris
             }
-        });
+
     }
 }

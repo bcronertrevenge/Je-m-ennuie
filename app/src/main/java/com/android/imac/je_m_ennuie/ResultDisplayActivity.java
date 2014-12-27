@@ -73,6 +73,7 @@ public class ResultDisplayActivity extends Activity implements View.OnClickListe
             }
             // Sinon on dit qu'il n 'y a plus de résultat :(
             else{
+                ResultDisplayActivity.this.finish();
                 Intent intent = new Intent(this, NoMoreResultActivity.class);
                 startActivity(intent);
             }
