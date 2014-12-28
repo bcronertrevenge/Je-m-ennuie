@@ -8,7 +8,7 @@ import android.widget.Toast;
 import java.io.IOException;
 
 /**
- * Created by Justine on 28/12/2014.
+ * Created by Virginie on 28/12/2014.
  */
 public class TestDatabaseActivity extends Activity{
 
