@@ -32,6 +32,10 @@
     <string name="button_continue">Continuer les questions</string>
     <string name="button_myactivities">Voir la liste de mes activités</string>
 
+    <!-- RESEAUX sociaux -->
+    <string name="facebook_app_id">407723899384341</string>
+
+
 
 
 </resources>
