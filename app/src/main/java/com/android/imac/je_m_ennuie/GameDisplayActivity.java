@@ -20,16 +20,16 @@ import android.widget.Toast;
 public class GameDisplayActivity extends Activity implements View.OnClickListener {
     // Liste des questions (à recuperer de la BDD)
     final String[] questions = new String[]{
-            "Le texte de la jolie petite question 1 ?",
-            "Le texte de la jolie petite question 2 ?",
-            "Le texte de la jolie petite question 3 ?",
-            "Le texte de la jolie petite question 4 ?",
-            "Le texte de la jolie petite question 5 ?",
-            "Le texte de la jolie petite question 6 ?",
-            "Le texte de la jolie petite question 7 ?",
-            "Le texte de la jolie petite question 8 ?",
-            "Le texte de la jolie petite question 9 ?",
-            "Le texte de la jolie petite question 10 ?",
+            "Le texte un tout petit plus long de la jolie petite question 1 ?",
+            "Le texte un tout petit plus long de la jolie petite question 2 ?",
+            "Le texte un tout petit plus long de la jolie petite question 3 ?",
+            "Le texte un tout petit plus long de la jolie petite question 4 ?",
+            "Le texte un tout petit plus long de la jolie petite question 5 ?",
+            "Le texte un tout petit plus long de la jolie petite question 6 ?",
+            "Le texte un tout petit plus long de la jolie petite question 7 ?",
+            "Le texte un tout petit plus long de la jolie petite question 8 ?",
+            "Le texte un tout petit plus long de la jolie petite question 9 ?",
+            "Le texte un tout petit plus long de la jolie petite question 10 ?",
     };
 
     int num_question=0;
