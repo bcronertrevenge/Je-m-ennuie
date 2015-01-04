@@ -22,7 +22,7 @@
 
     <!-- ACTIVITES DETAILLEES -->
     <string name="title_detailed_activity">Activité</string>
-    <string name="text_detailed_activity">Lis l'intégrale du seigneur des anneaux, pour voir les différences avec le film</string>
+    <string name="text_detailed_activity">Lis l\'intégrale du seigneur des anneaux, pour voir les différences avec le film</string>
     <string name="button_detailed_activity">Retirer des favoris</string>
 
     <!-- RESULTATS -->

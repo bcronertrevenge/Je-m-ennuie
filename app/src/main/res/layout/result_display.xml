@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ff73b4eb"
+    android:background="@color/background_color"
     android:gravity="center_vertical"
     tools:context=".GameDisplayActivity">
 
@@ -14,10 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_result"
-        android:textSize="35sp"
-        android:textColor="#ffffffff"
+        android:textSize="@dimen/middle_text"
+        android:textColor="@color/text_color"
         android:gravity="center_horizontal"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="@dimen/medium_margin"/>
 
 
     <TextView
@@ -25,20 +25,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lis l'intégrale du seigneur des anneaux, pour voir les différences avec le film"
-        android:textSize="26sp"
+        android:textSize="@dimen/default_text"
         android:lineSpacingMultiplier="1.4"
-        android:textColor="#ffffffff"
+        android:textColor="@color/text_color"
         android:gravity="center_horizontal"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/big_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
         android:gravity="center_horizontal"
         >
 
@@ -48,10 +48,10 @@
             android:text="@string/button_ok"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
-            android:layout_margin="8dp"
-            android:textColor="#ffffffff"
-            android:textSize="24sp"
+            android:background="@color/button_normal"
+            android:layout_margin="@dimen/mediumsmall_margin"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/default_text"
             />
 
         <Button
@@ -59,10 +59,10 @@
             android:text="@string/button_next"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
-            android:layout_margin="8dp"
-            android:textColor="#ffffffff"
-            android:textSize="24sp"
+            android:background="@color/button_normal"
+            android:layout_margin="@dimen/mediumsmall_margin"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/default_text"
             />
     </LinearLayout>
 
