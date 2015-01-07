@@ -16,8 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
         >
 
         <Button
@@ -26,9 +26,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/button_normal"
-            android:layout_margin="5dp"
+            android:layout_margin="@dimen/thin_margin"
             android:textColor="@color/text_color"
-            android:textSize="25sp"
+            android:textSize="@dimen/default_text"
             />
 
         <Button
@@ -37,9 +37,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/button_normal"
-            android:layout_margin="5dp"
+            android:layout_margin="@dimen/thin_margin"
             android:textColor="@color/text_color"
-            android:textSize="25sp"/>
+            android:textSize="@dimen/default_text"/>
 
         <Button
             android:id="@+id/button3"
@@ -47,9 +47,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/button_normal"
-            android:layout_margin="5dp"
+            android:layout_margin="@dimen/thin_margin"
             android:textColor="@color/text_color"
-            android:textSize="25sp"/>
+            android:textSize="@dimen/default_text"/>
 
         </LinearLayout>
 

@@ -4,11 +4,20 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.facebook.FacebookException;
+import com.facebook.FacebookOperationCanceledException;
+import com.facebook.Session;
+import com.facebook.UiLifecycleHelper;
+import com.facebook.widget.FacebookDialog;
+import com.facebook.widget.WebDialog;
+
 
 
 /**
@@ -22,11 +31,15 @@ public class DetailedActivityActivity extends Activity implements View.OnClickLi
     Button btn_favorite;
     Intent intent;
     boolean is_favorite;
+    private UiLifecycleHelper uiHelper;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detailed_activity);
+
+        uiHelper = new UiLifecycleHelper(this, null);
+        uiHelper.onCreate(savedInstanceState);
 
         /* Récupération des éléments de la vue */
         TextView title_activity = (TextView) findViewById(R.id.title_activity_detailed);
@@ -62,8 +75,19 @@ public class DetailedActivityActivity extends Activity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        if(v==btn_facebook)
-            Toast.makeText(getApplicationContext(), "Partage Facebook", Toast.LENGTH_SHORT).show();
+        if(v==btn_facebook) {
+            if (FacebookDialog.canPresentShareDialog(getApplicationContext(),
+                    FacebookDialog.ShareDialogFeature.SHARE_DIALOG)) {
+                // Publish the post using the Share Dialog
+                FacebookDialog shareDialog = new FacebookDialog.ShareDialogBuilder(this)
+                        .setLink("https://developers.facebook.com/android")
+                        .build();
+                uiHelper.trackPendingDialogCall(shareDialog.present());
+
+            } else {
+                Toast.makeText(getApplicationContext(),"Vous n'avez pas facebook d'installé",Toast.LENGTH_LONG).show();
+            }
+        }
 
         if(v==btn_twitter)
             Toast.makeText(getApplicationContext(), "Partage Twitter", Toast.LENGTH_SHORT).show();
@@ -83,4 +107,46 @@ public class DetailedActivityActivity extends Activity implements View.OnClickLi
             }
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        uiHelper.onActivityResult(requestCode, resultCode, data, new FacebookDialog.Callback() {
+            @Override
+            public void onError(FacebookDialog.PendingCall pendingCall, Exception error, Bundle data) {
+                Log.e("Activity", String.format("Error: %s", error.toString()));
+            }
+
+            @Override
+            public void onComplete(FacebookDialog.PendingCall pendingCall, Bundle data) {
+                Log.i("Activity", "Success!");
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        uiHelper.onResume();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        uiHelper.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        uiHelper.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        uiHelper.onDestroy();
+    }
+
 }

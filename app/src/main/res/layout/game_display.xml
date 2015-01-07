@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ff73b4eb"
+    android:background="@color/background_color"
     android:gravity="center_vertical"
     tools:context=".GameDisplayActivity">
 
@@ -15,19 +15,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Question sur l'activité"
-        android:textSize="33sp"
-        android:textColor="#ffffffff"
+        android:textSize="@dimen/medium_text"
+        android:textColor="@color/text_color"
         android:gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/big_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
         >
 
         <Button
@@ -35,10 +35,10 @@
             android:text="@string/answer_yes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
-            android:layout_margin="4dp"
-            android:textColor="#ffffffff"
-            android:textSize="20sp"
+            android:background="@color/button_normal"
+            android:layout_margin="@dimen/thin_margin"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/small_text"
             />
 
         <Button
@@ -46,10 +46,10 @@
             android:text="@string/answer_maybe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
-            android:layout_margin="4dp"
-            android:textColor="#ffffffff"
-            android:textSize="20sp"
+            android:background="@color/button_normal"
+            android:layout_margin="@dimen/thin_margin"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/small_text"
             />
 
         <Button
@@ -57,21 +57,21 @@
             android:text="@string/answer_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffff9016"
-            android:layout_margin="4dp"
-            android:textColor="#ffffffff"
-            android:textSize="20sp"
+            android:background="@color/button_normal"
+            android:layout_margin="@dimen/thin_margin"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/small_text"
             />
 
         <TextView
             android:id="@+id/number_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:textColor="#ffffffff"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:textColor="@color/text_color"
             android:gravity="right"
             android:text="1/10"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/small_text"/>
 
     </LinearLayout>
 

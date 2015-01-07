@@ -1,15 +1,26 @@
 package com.android.imac.je_m_ennuie;
 
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 
 
 public class JemennuieActivity extends ActionBarActivity {
@@ -17,11 +28,13 @@ public class JemennuieActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_jemennuie);
 
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println(printKeyHash(this));
 
         /* Récupération des éléments de la vue */
         Button button1 = (Button) findViewById(R.id.button1);
@@ -33,6 +46,7 @@ public class JemennuieActivity extends ActionBarActivity {
         button1.setTypeface(font);
         button2.setTypeface(font);
         button3.setTypeface(font);
+
 
         /* Changement de couleur au clic */
         button1.setBackgroundResource(R.drawable.selector);
@@ -68,6 +82,7 @@ public class JemennuieActivity extends ActionBarActivity {
         game.answerQuestion(Answer.Yes);
         game.answerQuestion(Answer.NoMatter);
         game.answerQuestion(Answer.No);
+
     }
 
 
@@ -88,5 +103,42 @@ public class JemennuieActivity extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    // fonction pour avoir la hash key de l'appli
+    public static String printKeyHash(Activity context) {
+        PackageInfo packageInfo;
+        String key = null;
+        try {
+
+            //getting application package name, as defined in manifest
+            String packageName = context.getApplicationContext().getPackageName();
+
+            //Retriving package info
+            packageInfo = context.getPackageManager().getPackageInfo(packageName,
+                    PackageManager.GET_SIGNATURES);
+
+            Log.e("Package Name=", context.getApplicationContext().getPackageName());
+
+            for (Signature signature : packageInfo.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                key = new String(Base64.encode(md.digest(), 0));
+
+                // String key = new String(Base64.encodeBytes(md.digest()));
+                Log.e("Key Hash=", key);
+
+            }
+        } catch (PackageManager.NameNotFoundException e1) {
+            Log.e("Name not found", e1.toString());
+        }
+
+        catch (NoSuchAlgorithmException e) {
+            Log.e("No such an algorithm", e.toString());
+        } catch (Exception e) {
+            Log.e("Exception", e.toString());
+        }
+
+        return key;
     }
 }

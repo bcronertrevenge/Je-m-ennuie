@@ -22,8 +22,8 @@
         android:layout_toRightOf="@id/icon"
         android:singleLine="true"
         android:text="Nom de l'activité"
-        android:textColor="#ffffffff"
-        android:textSize="18sp" />
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/mediumsmall_text" />
 
 
 

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="#ff73b4eb"
+    android:background="@color/background_color"
     android:gravity="center_vertical"
     tools:context=".ActivityListActivity"
-    android:padding="10dp">
+    android:padding="@dimen/small_margin">
 
 
     <TextView
@@ -16,8 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_activity_list"
-        android:textColor="#ffffffff"
-        android:textSize="30dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/medium_text"
         android:gravity="center"
         android:layout_margin="0dp"
     />
@@ -27,9 +27,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="12 activités sur 50"
-        android:textColor="#ffffffff"
-        android:textSize="16dp"
-        android:layout_marginBottom="8dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/mini_text"
+        android:layout_marginBottom="@dimen/small_margin"
         android:gravity="center"
         />
 
