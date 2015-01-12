@@ -12,6 +12,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by Virginie on 28/12/2014.
@@ -111,7 +113,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         }
 
 
-        /*** Questions ***/
+        /****************************** Questions *************************************/
         public Question getQuestionById(int id){
             Cursor c = this.myDataBase.rawQuery("SELECT * FROM Question WHERE _id = "+ id, null);
             return cursorToQuestion(c);
@@ -135,7 +137,77 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             return question;
         }
 
+        // choisir aléatoirement un nombre de questions dans la base de données et les entrer dans un ArrayList<Question>
+        public ArrayList<Question> generateQuestions(int nbQuestions){
 
+            ArrayList<Question> questions = new ArrayList<Question>();
+
+            // on compte le nb de questions dans la bdd
+            Cursor cur = this.myDataBase.rawQuery("SELECT * FROM Questions", null);
+            int maxValue = cur.getCount();
+
+            // on génère nbQuestions nombre aléatoire
+            int[]randomNumbers = generateRandom(nbQuestions, maxValue);
+
+            // on remplit l'ArrayList avec les questions de la bdd
+            for (int i = 0; i<nbQuestions; ++i){
+                questions.add(this.getQuestionById(randomNumbers[i]));
+                System.out.println(randomNumbers[i]+ " Question numéro "+ questions.get(i).getId() +" énoncé : "+questions.get(i).toString());
+            }
+
+            return questions;
+        }
+
+
+        /****************************** Activité *************************************/
+        public ActivityToDo getActivityToDoById(int id){
+            Cursor c = this.myDataBase.rawQuery("SELECT * FROM Activity WHERE _id = "+ id, null);
+            return cursorToActivityToDo(c);
+        }
+
+
+        private ActivityToDo cursorToActivityToDo(Cursor c){
+            //si aucun élément n'a été retourné dans la requête, on renvoie null
+            if (c.getCount() == 0) {
+                return null;
+            }
+            //Sinon on se place sur le premier élément
+            c.moveToFirst();
+            //On créé une activité
+            ActivityToDo activityToDo = new ActivityToDo(c.getString(1), c.getInt(0));
+            //on lui affecte toutes les infos grâce aux infos contenues dans le Cursor
+            activityToDo.setIdActivity(c.getInt(0));
+            activityToDo.setNameActivity(c.getString(1));
+
+            // caster favorite et discover : int en bdd -> boolean en java
+            boolean favorite = c.getInt(2) > 0 ? true : false ;
+            boolean discover = c.getInt(3) > 0 ? true : false ;
+
+            activityToDo.setFavorite(favorite);
+            activityToDo.setDiscovered(discover);
+            //On ferme le cursor
+            c.close();
+
+            //On retourne le livre
+            return activityToDo;
+        }
+
+
+        // générer un certain nombre (length) de chiffre aléatoire
+        public static int[] generateRandom(int length, int maxValue) {
+            Random random = new Random();
+            int[] digits = new int[length];
+            digits[0] = (int) (random.nextInt(maxValue) + '1');
+            for (int i = 1; i < length; i++) {
+                digits[i] = (int) (random.nextInt(maxValue+1) + '0');
+            }
+
+            for (int i=0; i<length; ++i){
+                System.out.println(digits[i]);
+            }
+            //return Long.parseLong(new String(digits));
+            return digits;
+        }
 
 
         @Override
