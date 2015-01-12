@@ -14,6 +14,8 @@ import java.io.IOException;
  */
 public class TestDatabaseActivity extends Activity{
 
+    private static final String DB_NAME = "Jemennuie_database.sqlite3";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,39 +48,37 @@ public class TestDatabaseActivity extends Activity{
         }
 */
 
-        DataBaseHelper myDbHelper = new DataBaseHelper(this);
+        DataBaseHelper myDbHelper = new DataBaseHelper(this, DB_NAME);
 
-
-
-        try {
+    System.out.println("Debut Database");
             myDbHelper.createDataBase();
             //On affiche les infos du livre dans un Toast
             Toast.makeText(this, "Database created ! ", Toast.LENGTH_LONG).show();
 
 
 
-        } catch (IOException ioe) {
-            Toast.makeText(this, "Database not created ! :( ", Toast.LENGTH_LONG).show();
-            throw new Error("Unable to create database");
-
-        }
-
         try {
             myDbHelper.openDataBase();
-            Toast.makeText(this, "Database opened ! ", Toast.LENGTH_LONG).show();
+
             String dbname = myDbHelper.getDatabaseName();
-            Toast.makeText(this, dbname, Toast.LENGTH_LONG).show();
+            System.out.println("Open Database" + dbname);
 
             // Test en dur --> récupérer info bdd
-            SQLiteDatabase bdd;
+            /*SQLiteDatabase bdd;
             bdd = myDbHelper.getWritableDatabase();
 
             String bddPath = bdd.getPath();
-            Toast.makeText(this, bddPath, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, bddPath, Toast.LENGTH_LONG).show();*/
+
+            Cursor cur = myDbHelper.myDataBase.rawQuery("SELECT * FROM Activity", null);
 
 
-            Cursor c = bdd.rawQuery("SELECT text FROM Activity WHERE _id = 0", null);
-            Toast.makeText(this, c.toString(), Toast.LENGTH_LONG).show();
+            //System.out.println("Select Database" + c.getCount());
+            cur.moveToFirst();
+            while (cur.isAfterLast() == false) {
+                System.out.println("BOOOOWWAAA " + cur.getString(1));
+                cur.moveToNext();
+            }
 
             /*Cursor c = bdd.query("Activity", new String[] {"id", "text", "favorite", "discover"}, "id LIKE 0", null, null, null, null );
             Toast.makeText(this, "Cursor test", Toast.LENGTH_LONG).show();

@@ -27,7 +27,7 @@ public class ActivityDatabase {
 
     public ActivityDatabase(Context context){
         //On créer la BDD et sa table
-        bddHelper = new DataBaseHelper(context);
+        bddHelper = new DataBaseHelper(context, "Jemennuie_database");
     }
 
     public void open(){
