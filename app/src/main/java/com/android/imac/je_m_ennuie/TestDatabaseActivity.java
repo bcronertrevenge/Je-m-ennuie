@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by Virginie on 28/12/2014.
@@ -35,25 +36,32 @@ public class TestDatabaseActivity extends Activity{
             String dbname = myDbHelper.getDatabaseName();
             System.out.println("Open Database" + dbname);
 
+            /* test question */
             Question question = myDbHelper.getQuestionById(8);
             System.out.println("HEYYY YAAAA ");
-            /*
-            cur.moveToFirst();
-            Toast.makeText(this, "HEYYY YAAAA "+cur.getString(1), Toast.LENGTH_LONG).show();
-            System.out.println("HEYYY YAAAA "+cur.getString(1));
 
-            Question question = myDbHelper.cursorToQuestion(cur);
-            */
             System.out.println(question.toString());
             Toast.makeText(this, "HEYYY YAAAA question : "+question.toString(), Toast.LENGTH_LONG).show();
 
-            /*Cursor cur = myDbHelper.myDataBase.rawQuery("SELECT * FROM Activity", null);
+             /* test activité */
+            ActivityToDo activityToDo = myDbHelper.getActivityToDoById(1);
+            System.out.println("HEYYY YAAAA ");
+
+            System.out.println(activityToDo.toString());
+            Toast.makeText(this, "HEYYY YAAAA activité : "+activityToDo.toString(), Toast.LENGTH_LONG).show();
 
 
-            cur.moveToFirst();
-            while (cur.isAfterLast() == false) {
-                System.out.println("BOOOOWWAAA " + cur.getString(1));
-                cur.moveToNext();
+            /* test ArrayList Question */
+
+            int[] test_int =  myDbHelper.generateRandom(10, 50);
+            for (int i = 0; i<10; ++i){
+                System.out.println(test_int[i]);
+                Toast.makeText(this, "intRandom : "+test_int[i], Toast.LENGTH_LONG).show();
+            }
+
+            //ArrayList<Question> questionArrayList = myDbHelper.generateQuestions(10);
+            /*for (int i = 0; i<10; ++i){
+                Toast.makeText(this, " Question numéro "+ questionArrayList.get(i).getId() +" énoncé : "+questionArrayList.get(i).toString(), Toast.LENGTH_LONG).show();
             }*/
 
         }catch(SQLException sqle){
@@ -61,6 +69,8 @@ public class TestDatabaseActivity extends Activity{
             throw sqle;
         }
 
+        // fermer la bdd
+        myDbHelper.close();
 
     }
 
