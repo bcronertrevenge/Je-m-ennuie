@@ -1,9 +1,7 @@
 package com.android.imac.je_m_ennuie;
 
-import android.app.Activity;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 
 /**
@@ -87,4 +85,5 @@ public class DataBase {
                 return Answer.NoMatter;
         }
     }
+
 }
