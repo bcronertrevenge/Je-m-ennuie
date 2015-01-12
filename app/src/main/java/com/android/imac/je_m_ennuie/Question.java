@@ -5,6 +5,7 @@ package com.android.imac.je_m_ennuie;
  */
 public class Question {
     String nameQuestion;
+    int id;
 
     Question(String name)
     {
@@ -14,6 +15,14 @@ public class Question {
     String getNameQuestion()
     {
         return nameQuestion;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

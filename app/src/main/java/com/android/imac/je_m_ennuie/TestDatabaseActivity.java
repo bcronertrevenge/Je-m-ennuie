@@ -20,42 +20,14 @@ public class TestDatabaseActivity extends Activity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jemennuie);
-/*
-        ActivityDatabase databaseTest = new ActivityDatabase(this);
 
-        ActivityToDo testActivity;
-
-        DataBaseHelper myDbHelper;
-
-        myDbHelper = databaseTest.getBDDHelper();
-
-        try {
-            myDbHelper.createDataBase();
-        } catch (IOException e) {
-            e.printStackTrace();
-            Toast.makeText(this, "erreur database", Toast.LENGTH_LONG).show();
-        }
-
-        myDbHelper.openDataBase();
-
-        databaseTest.open();
-        testActivity = databaseTest.getActivityToDo(0);
-        /*if(testActivity != null) {
-            Toast.makeText(this, testActivity.toString(), Toast.LENGTH_LONG).show();
-        }
-        else{
-            Toast.makeText(this, "erreur", Toast.LENGTH_LONG).show();
-        }
-*/
 
         DataBaseHelper myDbHelper = new DataBaseHelper(this, DB_NAME);
 
-    System.out.println("Debut Database");
-            myDbHelper.createDataBase();
-            //On affiche les infos du livre dans un Toast
-            Toast.makeText(this, "Database created ! ", Toast.LENGTH_LONG).show();
+        System.out.println("Debut Database");
+        myDbHelper.createDataBase();
 
-
+        System.out.println("Database created ! ");
 
         try {
             myDbHelper.openDataBase();
@@ -63,34 +35,34 @@ public class TestDatabaseActivity extends Activity{
             String dbname = myDbHelper.getDatabaseName();
             System.out.println("Open Database" + dbname);
 
-            // Test en dur --> récupérer info bdd
-            /*SQLiteDatabase bdd;
-            bdd = myDbHelper.getWritableDatabase();
+            Question question = myDbHelper.getQuestionById(8);
+            System.out.println("HEYYY YAAAA ");
+            /*
+            cur.moveToFirst();
+            Toast.makeText(this, "HEYYY YAAAA "+cur.getString(1), Toast.LENGTH_LONG).show();
+            System.out.println("HEYYY YAAAA "+cur.getString(1));
 
-            String bddPath = bdd.getPath();
-            Toast.makeText(this, bddPath, Toast.LENGTH_LONG).show();*/
+            Question question = myDbHelper.cursorToQuestion(cur);
+            */
+            System.out.println(question.toString());
+            Toast.makeText(this, "HEYYY YAAAA question : "+question.toString(), Toast.LENGTH_LONG).show();
 
-            Cursor cur = myDbHelper.myDataBase.rawQuery("SELECT * FROM Activity", null);
+            /*Cursor cur = myDbHelper.myDataBase.rawQuery("SELECT * FROM Activity", null);
 
 
-            //System.out.println("Select Database" + c.getCount());
             cur.moveToFirst();
             while (cur.isAfterLast() == false) {
                 System.out.println("BOOOOWWAAA " + cur.getString(1));
                 cur.moveToNext();
-            }
-
-            /*Cursor c = bdd.query("Activity", new String[] {"id", "text", "favorite", "discover"}, "id LIKE 0", null, null, null, null );
-            Toast.makeText(this, "Cursor test", Toast.LENGTH_LONG).show();
-            Toast.makeText(this, c.toString(), Toast.LENGTH_LONG).show();
-*/
-
-
+            }*/
 
         }catch(SQLException sqle){
-            Toast.makeText(this, "Database not opened ! :( ", Toast.LENGTH_LONG).show();
+            System.out.println("Database not opened ! :( ");
             throw sqle;
         }
 
+
     }
+
+
 }

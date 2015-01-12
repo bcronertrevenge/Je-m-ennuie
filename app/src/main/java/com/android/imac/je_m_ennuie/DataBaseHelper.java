@@ -1,6 +1,7 @@
 package com.android.imac.je_m_ennuie;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
@@ -22,7 +23,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     private static String DB_NAME = "Jemennuie_database";
 
-    private static String ASSETS_DB_FOLDER = "db";
+    // private static String ASSETS_DB_FOLDER = "db";
 
     public SQLiteDatabase myDataBase;
 
@@ -108,6 +109,34 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             }
             return myDataBase;
         }
+
+
+        /*** Questions ***/
+        public Question getQuestionById(int id){
+            Cursor c = this.myDataBase.rawQuery("SELECT * FROM Question WHERE _id = "+ id, null);
+            return cursorToQuestion(c);
+        }
+
+        public Question cursorToQuestion(Cursor cursor){
+            //si aucun élément n'a été retourné dans la requête, on renvoie null
+            if (cursor.getCount() == 0) {
+                return null;
+            }
+            //Sinon on se place sur le premier élément
+            cursor.moveToFirst();
+            //On créé une question
+            Question question = new Question(cursor.getString(1));
+            //on lui affecte toutes les infos grâce aux infos contenues dans le Cursor
+            question.setId(cursor.getInt(0));
+
+            //On ferme le cursor
+            cursor.close();
+
+            return question;
+        }
+
+
+
 
         @Override
         public synchronized void close() {
