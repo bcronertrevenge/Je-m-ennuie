@@ -142,12 +142,17 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
             ArrayList<Question> questions = new ArrayList<Question>();
 
+/**********************PROBLEME : RECUPERER LE NB DE VALEUR QUE CONTIENT LA TABLE QUESTION POUR GENERER MAX_VALUE***********************************/
             // on compte le nb de questions dans la bdd
-            Cursor cur = this.myDataBase.rawQuery("SELECT * FROM Questions", null);
-            int maxValue = cur.getCount();
+            //Cursor cursor = this.myDataBase.rawQuery("SELECT * FROM Questions", null);
+            //System.out.println(cur.toString());
+            //int maxValue = cur.getCount();
+            int maxValue = 10;
 
             // on génère nbQuestions nombre aléatoire
-            int[]randomNumbers = generateRandom(nbQuestions, maxValue);
+            //int[]randomNumbers = generateRandom(nbQuestions, maxValue);
+            int[]randomNumbers = {0,1,2,3,4,5,6,7,8,9};
+
 
             // on remplit l'ArrayList avec les questions de la bdd
             for (int i = 0; i<nbQuestions; ++i){
@@ -192,8 +197,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             return activityToDo;
         }
 
-
-        // générer un certain nombre (length) de chiffre aléatoire
+    /**********************PROBLEME : NE FONCTIONNE PAS **********************************/
+        // générer un certain nombre (length) de chiffre aléatoire de valeur maximum maxValue
         public static int[] generateRandom(int length, int maxValue) {
             Random random = new Random();
             int[] digits = new int[length];
