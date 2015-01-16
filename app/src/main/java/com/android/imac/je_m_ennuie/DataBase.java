@@ -18,6 +18,7 @@ public class DataBase {
 
     }
 
+    //Initialisation à l'ouverture du jeu
     void initialize()
     {
         activityDBArray = new LinkedList<ActivityToDo>();
@@ -68,6 +69,7 @@ public class DataBase {
         return questionDBArray.get(id);
     }
 
+    //Impact d'une activité selon une question
     Answer getImpactActivity(int idActivity, Question question)
     {
         //Lecture en BD
