@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.Random;
 
 /**
  * Created by Virginie on 28/12/2014.
@@ -24,6 +23,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private static String DB_PATH = "/data/data/com.android.imac.je_m_ennuie/databases/";
 
     private static String DB_NAME = "Jemennuie_database";
+
+    public ArrayList<Question> questions;
 
     // private static String ASSETS_DB_FOLDER = "db";
 
@@ -42,6 +43,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             String packageName = context.getPackageName();
             DB_PATH = String.format("//data//data//%s//databases//", packageName);
             DB_NAME = databaseName;
+            questions = new ArrayList<Question>();
             openDataBase();
         }
 
@@ -116,6 +118,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         /****************************** Questions *************************************/
         public Question getQuestionById(int id){
             Cursor c = this.myDataBase.rawQuery("SELECT * FROM Question WHERE _id = "+ id, null);
+            c.moveToFirst();
             return cursorToQuestion(c);
         }
 
@@ -125,48 +128,42 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 return null;
             }
             //Sinon on se place sur le premier élément
-            cursor.moveToFirst();
+            //cursor.moveToFirst();
             //On créé une question
             Question question = new Question(cursor.getString(1));
             //on lui affecte toutes les infos grâce aux infos contenues dans le Cursor
             question.setId(cursor.getInt(0));
 
             //On ferme le cursor
-            cursor.close();
+            //cursor.close();
 
             return question;
         }
 
         // choisir aléatoirement un nombre de questions dans la base de données et les entrer dans un ArrayList<Question>
-        public ArrayList<Question> generateQuestions(int nbQuestions){
+        public void fillQuestionsFromDB(){
 
-            ArrayList<Question> questions = new ArrayList<Question>();
+            Cursor cur = this.myDataBase.rawQuery("SELECT * FROM Question", null);
 
-/**********************PROBLEME : RECUPERER LE NB DE VALEUR QUE CONTIENT LA TABLE QUESTION POUR GENERER MAX_VALUE***********************************/
-            // on compte le nb de questions dans la bdd
-            //Cursor cursor = this.myDataBase.rawQuery("SELECT * FROM Questions", null);
-            //System.out.println(cur.toString());
-            //int maxValue = cur.getCount();
-            int maxValue = 10;
+            //System.out.println("Select Database" + c.getCount());
+            cur.moveToFirst();
+            //System.out.println("CURSOOOOOOOOOOOOR "+cur.getCount());
 
-            // on génère nbQuestions nombre aléatoire
-            //int[]randomNumbers = generateRandom(nbQuestions, maxValue);
-            int[]randomNumbers = {0,1,2,3,4,5,6,7,8,9};
-
-
-            // on remplit l'ArrayList avec les questions de la bdd
-            for (int i = 0; i<nbQuestions; ++i){
-                questions.add(this.getQuestionById(randomNumbers[i]));
-                System.out.println(randomNumbers[i]+ " Question numéro "+ questions.get(i).getId() +" énoncé : "+questions.get(i).toString());
+            while (cur.isAfterLast() == false) {
+                System.out.println("BOOOOWWAAA " + cur.getString(1));
+                questions.add(cursorToQuestion(cur));
+                cur.moveToNext();
             }
 
-            return questions;
+            // on ferme le cursor
+            cur.close();
         }
 
 
         /****************************** Activité *************************************/
         public ActivityToDo getActivityToDoById(int id){
             Cursor c = this.myDataBase.rawQuery("SELECT * FROM Activity WHERE _id = "+ id, null);
+            c.moveToFirst();
             return cursorToActivityToDo(c);
         }
 
@@ -177,7 +174,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 return null;
             }
             //Sinon on se place sur le premier élément
-            c.moveToFirst();
+            //c.moveToFirst();
             //On créé une activité
             ActivityToDo activityToDo = new ActivityToDo(c.getString(1), c.getInt(0));
             //on lui affecte toutes les infos grâce aux infos contenues dans le Cursor
@@ -199,7 +196,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     /**********************PROBLEME : NE FONCTIONNE PAS **********************************/
         // générer un certain nombre (length) de chiffre aléatoire de valeur maximum maxValue
-        public static int[] generateRandom(int length, int maxValue) {
+        /*public static int[] generateRandom(int length, int maxValue) {
             Random random = new Random();
             int[] digits = new int[length];
             digits[0] = (int) (random.nextInt(maxValue) + '1');
@@ -212,7 +209,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             }
             //return Long.parseLong(new String(digits));
             return digits;
-        }
+        }*/
 
 
         @Override

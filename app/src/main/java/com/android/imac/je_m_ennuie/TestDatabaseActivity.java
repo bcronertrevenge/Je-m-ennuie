@@ -53,20 +53,15 @@ public class TestDatabaseActivity extends Activity{
             System.out.println("HEYYY YAAAA ");
 
             System.out.println(activityToDo.toString());
-            Toast.makeText(this, "HEYYY YAAAA activité : "+activityToDo.toString(), Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "HEYYY YAAAA activité : "+activityToDo.toString(), Toast.LENGTH_LONG).show();
 
 
             /* test ArrayList Question */
 
-            /*int[] test_int =  myDbHelper.generateRandom(10, 50);
-            for (int i = 0; i<10; ++i){
-                System.out.println(test_int[i]);
-                Toast.makeText(this, "intRandom : "+test_int[i], Toast.LENGTH_LONG).show();
-            }*/
-
-            ArrayList<Question> questionArrayList = myDbHelper.generateQuestions(10);
-            for (int i = 0; i<10; ++i){
-                Toast.makeText(this, " Question numéro "+ questionArrayList.get(i).getId() +" énoncé : "+questionArrayList.get(i).toString(), Toast.LENGTH_LONG).show();
+            myDbHelper.fillQuestionsFromDB();
+            System.out.println("taille de questions "+myDbHelper.questions.size());
+            for (int i = 0; i<myDbHelper.questions.size(); ++i){
+                Toast.makeText(this, " Question numéro "+ myDbHelper.questions.get(i).getId() +" énoncé : "+myDbHelper.questions.get(i).toString(), Toast.LENGTH_LONG).show();
             }
 
         }catch(SQLException sqle){
