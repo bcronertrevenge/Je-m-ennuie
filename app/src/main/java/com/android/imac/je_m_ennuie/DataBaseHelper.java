@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * Created by Virginie on 28/12/2014.
@@ -25,6 +26,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private static String DB_NAME = "Jemennuie_database";
 
     public ArrayList<Question> questions;
+    public LinkedList<ActivityToDo> activities;
 
     // private static String ASSETS_DB_FOLDER = "db";
 
@@ -140,18 +142,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             return question;
         }
 
-        // choisir aléatoirement un nombre de questions dans la base de données et les entrer dans un ArrayList<Question>
+        // récupérer les questions de la BDD et remplir l' ArrayList<Question> questions avec
         public void fillQuestionsFromDB(){
 
             Cursor cur = this.myDataBase.rawQuery("SELECT * FROM Question", null);
 
-            //System.out.println("Select Database" + c.getCount());
             cur.moveToFirst();
-            //System.out.println("CURSOOOOOOOOOOOOR "+cur.getCount());
 
             while (cur.isAfterLast() == false) {
                 System.out.println("BOOOOWWAAA " + cur.getString(1));
-                questions.add(cursorToQuestion(cur));
+                activities.add(cursorToActivityToDo(cur));
                 cur.moveToNext();
             }
 
@@ -194,25 +194,26 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             return activityToDo;
         }
 
-    /**********************PROBLEME : NE FONCTIONNE PAS **********************************/
-        // générer un certain nombre (length) de chiffre aléatoire de valeur maximum maxValue
-        /*public static int[] generateRandom(int length, int maxValue) {
-            Random random = new Random();
-            int[] digits = new int[length];
-            digits[0] = (int) (random.nextInt(maxValue) + '1');
-            for (int i = 1; i < length; i++) {
-                digits[i] = (int) (random.nextInt(maxValue+1) + '0');
+        // récupérer les activités de la BDD et remplir l' ArrayList<ActivityToDo> activities  avec
+        public void fillActivitiesToDoFromDB(){
+
+            Cursor cur = this.myDataBase.rawQuery("SELECT * FROM Activity", null);
+
+            cur.moveToFirst();
+
+            while (cur.isAfterLast() == false) {
+                questions.add(cursorToQuestion(cur));
+                cur.moveToNext();
             }
 
-            for (int i=0; i<length; ++i){
-                System.out.println(digits[i]);
-            }
-            //return Long.parseLong(new String(digits));
-            return digits;
-        }*/
+            // on ferme le cursor
+            cur.close();
+        }
 
 
-        @Override
+
+
+    @Override
         public synchronized void close() {
             if (myDataBase != null) {
                 myDataBase.close();
