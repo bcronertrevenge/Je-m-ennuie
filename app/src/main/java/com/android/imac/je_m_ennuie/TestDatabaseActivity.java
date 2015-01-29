@@ -36,33 +36,52 @@ public class TestDatabaseActivity extends Activity{
         System.out.println("Database created ! ");
 
         try {
+            // ouverture de la base de données
             myDbHelper.openDataBase();
 
+            /*
+            // test succès ouverture bdd
             String dbname = myDbHelper.getDatabaseName();
             System.out.println("Open Database" + dbname);
 
-            /* test question */
+            // test question
             Question question = myDbHelper.getQuestionById(8);
             System.out.println("HEYYY YAAAA ");
 
             System.out.println(question.toString());
             Toast.makeText(this, "HEYYY YAAAA question : "+question.toString(), Toast.LENGTH_LONG).show();
 
-             /* test activité */
+             // test activité
             ActivityToDo activityToDo = myDbHelper.getActivityToDoById(1);
             System.out.println("HEYYY YAAAA ");
 
             System.out.println(activityToDo.toString());
             //Toast.makeText(this, "HEYYY YAAAA activité : "+activityToDo.toString(), Toast.LENGTH_LONG).show();
 
+            */
 
-            /* test ArrayList Question */
+            // test ArrayList Question
 
             myDbHelper.fillQuestionsFromDB();
             System.out.println("taille de questions "+myDbHelper.questions.size());
             for (int i = 0; i<myDbHelper.questions.size(); ++i){
                 Toast.makeText(this, " Question numéro "+ myDbHelper.questions.get(i).getId() +" énoncé : "+myDbHelper.questions.get(i).toString(), Toast.LENGTH_LONG).show();
             }
+
+// A FAIRE !            // test LinkedList ActivityToDo
+
+            myDbHelper.fillActivitiesToDoFromDB();
+            System.out.println("taille de activities "+myDbHelper.activities.size());
+            for (int i = 0; i<myDbHelper.activities.size(); ++i){
+                Toast.makeText(this, " Activité numéro "+ myDbHelper.activities.get(i).getIdActivity() +
+                        " énoncé : "+myDbHelper.activities.get(i).getNameActivity()+
+                        " favori : "+myDbHelper.activities.get(i).getFavorite()+
+                        " découvert : "+myDbHelper.activities.get(i).getDiscovered(),
+                        Toast.LENGTH_LONG).show();
+            }
+
+
+
 
         }catch(SQLException sqle){
             System.out.println("Database not opened ! :( ");
