@@ -2,7 +2,6 @@
 <merger version="2" >
 
     <dataSet config="20.0.0" >
-<<<<<<< HEAD
         <source path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res" />
     </dataSet>
     <dataSet config="main" >
@@ -10,1076 +9,595 @@
             <file
                 name="com_facebook_button_blue"
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue.xml"
-=======
-        <source path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res" />
-    </dataSet>
-    <dataSet config="main" >
-        <source path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res" >
-            <file
-                name="com_facebook_button_blue"
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue_normal.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue_normal.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_blue_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_check"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_check.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_check.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_check_off"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_check_off.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_check_off.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_check_on"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_check_on.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_check_on.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_grey_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_grey_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_normal"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_grey_normal.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_grey_normal.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_grey_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_grey_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_background.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_background.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_background_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_background_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_icon_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_icon_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_pressed.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_pressed.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_selected.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_button_like_selected.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_close"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_close.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_close.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_inverse_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_inverse_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_list_divider"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_list_divider.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_list_divider.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_list_section_header_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_list_section_header_background.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_list_section_header_background.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_loginbutton_silver"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_loginbutton_silver.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_loginbutton_silver.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_logo"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_logo.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_logo.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_item_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_item_background.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_item_background.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_longpressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_longpressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_longpressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_selector"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_selector.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_selector.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_selector_background_transition"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_selector_background_transition.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_selector_background_transition.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_selector_disabled"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_selector_disabled.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_list_selector_disabled.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_top_button"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_top_button.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_picker_top_button.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_place_default_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_place_default_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_place_default_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_profile_default_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_profile_default_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_profile_default_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_profile_picture_blank_portrait"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_profile_picture_blank_portrait.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_profile_picture_blank_portrait.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_profile_picture_blank_square"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_profile_picture_blank_square.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_profile_picture_blank_square.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_top_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_top_background.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_top_background.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_top_button"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_top_button.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_top_button.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_usersettingsfragment_background_gradient"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_blue_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_blue_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_blue_normal.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_blue_normal.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_blue_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_blue_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_grey_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_grey_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_normal"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_grey_normal.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_grey_normal.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_grey_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_grey_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_background.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_background.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_background_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_background_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_icon_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_icon_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_pressed.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_button_like_pressed.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_close"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_close.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_close.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_inverse_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_inverse_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_logo"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_logo.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_logo.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_picker_magnifier"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_picker_magnifier.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_picker_magnifier.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_background.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_background.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_bottomnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_bottomnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_bottomnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_topnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_topnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_topnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_xout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_xout.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_black_xout.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_background.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_background.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_bottomnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_bottomnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_bottomnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_topnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_topnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_topnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_xout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_xout.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-hdpi\com_facebook_tooltip_blue_xout.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_close"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-ldpi\com_facebook_close.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-ldpi\com_facebook_close.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="ldpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_button_blue_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_button_blue_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_button_blue_normal.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_button_blue_normal.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_button_blue_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_button_blue_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_inverse_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_inverse_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_picker_magnifier"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_picker_magnifier.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_picker_magnifier.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_background.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_background.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_bottomnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_bottomnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_bottomnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_topnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_topnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_topnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_xout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_xout.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_black_xout.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_background.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_background.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_bottomnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_bottomnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_bottomnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_topnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_topnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_topnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_xout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_xout.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-mdpi\com_facebook_tooltip_blue_xout.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_blue_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_blue_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_blue_normal.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_blue_normal.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_blue_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_blue_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_focused"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_grey_focused.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_grey_focused.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_normal"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_grey_normal.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_grey_normal.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_grey_pressed.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_grey_pressed.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_background.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_background.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_background_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_background_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_icon_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_icon_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_pressed.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_button_like_pressed.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_close"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_close.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_close.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_inverse_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_inverse_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_logo"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_logo.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_logo.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_picker_magnifier"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_picker_magnifier.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_picker_magnifier.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_background.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_background.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_bottomnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_bottomnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_bottomnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_topnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_topnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_topnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_xout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_xout.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_black_xout.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_background.9.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_background.9.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_bottomnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_bottomnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_bottomnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_topnub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_topnub.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_topnub.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_xout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_xout.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xhdpi\com_facebook_tooltip_blue_xout.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_background.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_background.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_background_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_background_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_icon.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_icon.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_icon_selected.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_icon_selected.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_pressed.png"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\drawable-xxhdpi\com_facebook_button_like_pressed.png"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_friendpickerfragment"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_friendpickerfragment.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_friendpickerfragment.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_login_activity_layout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_login_activity_layout.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_login_activity_layout.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_activity_circle_row"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_activity_circle_row.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_activity_circle_row.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_checkbox"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_checkbox.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_checkbox.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_image"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_image.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_image.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_list_row"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_list_row.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_list_row.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_list_section_header"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_list_section_header.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_list_section_header.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_search_box"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_search_box.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_search_box.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_title_bar"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_title_bar.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_title_bar.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_title_bar_stub"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_picker_title_bar_stub.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_picker_title_bar_stub.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_placepickerfragment"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_placepickerfragment.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_placepickerfragment.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_placepickerfragment_list_row"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_placepickerfragment_list_row.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_placepickerfragment_list_row.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_search_bar_layout"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_search_bar_layout.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_search_bar_layout.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_tooltip_bubble"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_tooltip_bubble.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_tooltip_bubble.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_usersettingsfragment"
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\layout\com_facebook_usersettingsfragment.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values\attrs.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\layout\com_facebook_usersettingsfragment.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values\attrs.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="" >
                 <declare-styleable name="com_facebook_profile_picture_view" >
                     <attr name="preset_size" >
@@ -1204,11 +722,7 @@
                 </declare-styleable>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values\colors.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values\colors.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="" >
                 <color name="com_facebook_picker_search_bar_background" >#f5f5f7
                 </color>
@@ -1219,22 +733,14 @@
                 </dimen>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values\drawables.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values\drawables.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="" >
                 <drawable name="com_facebook_picker_default_separator_color" >
 #33464c59
                 </drawable>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values\strings.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values\strings.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="" >
                 <string name="com_facebook_usersettingsfragment_logged_in" >Logged in
                 </string>
@@ -1296,11 +802,7 @@
                 </string>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values\styles.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values\styles.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="" >
                 <dimen name="com_facebook_profilepictureview_preset_size_normal" >100dp
                 </dimen>
@@ -1464,11 +966,7 @@ center
                 </dimen>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values-es\strings.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values-es\strings.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="es" >
                 <string name="com_facebook_nearby" >Cercano
                 </string>
@@ -1524,21 +1022,13 @@ center
                 </string>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values-hdpi\dimens.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values-hdpi\dimens.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="hdpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >1px
                 </dimen>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values-he\strings.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values-he\strings.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="he" >
                 <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
                 </string>
@@ -1594,11 +1084,7 @@ center
                 </string>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values-iw\strings.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values-iw\strings.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="iw" >
                 <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
                 </string>
@@ -1654,49 +1140,29 @@ center
                 </string>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values-ldpi\dimens.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values-ldpi\dimens.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="ldpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >1px
                 </dimen>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values-mdpi\dimens.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values-mdpi\dimens.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="mdpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >1px
                 </dimen>
             </file>
             <file
-<<<<<<< HEAD
                 path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\res\values-xhdpi\dimens.xml"
-=======
-                path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\res\values-xhdpi\dimens.xml"
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
                 qualifiers="xhdpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >2px
                 </dimen>
             </file>
         </source>
-<<<<<<< HEAD
         <source path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\build\generated\res\rs\release" />
         <source path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\build\generated\res\generated\release" />
     </dataSet>
     <dataSet config="release" >
         <source path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\src\release\res" />
-=======
-        <source path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\build\generated\res\rs\release" />
-        <source path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\build\generated\res\generated\release" />
-    </dataSet>
-    <dataSet config="release" >
-        <source path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\src\release\res" />
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
     </dataSet>
 
 </merger>
