@@ -46,6 +46,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             DB_PATH = String.format("//data//data//%s//databases//", packageName);
             DB_NAME = databaseName;
             questions = new ArrayList<Question>();
+            activities = new LinkedList<ActivityToDo>();
             openDataBase();
         }
 
@@ -151,7 +152,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
             while (cur.isAfterLast() == false) {
                 System.out.println("BOOOOWWAAA " + cur.getString(1));
-                activities.add(cursorToActivityToDo(cur));
+                questions.add(cursorToQuestion(cur));
                 cur.moveToNext();
             }
 
@@ -187,8 +188,12 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
             activityToDo.setFavorite(favorite);
             activityToDo.setDiscovered(discover);
+
+            System.out.println("BOOOOWWAAA cursorToActivityToDo" + c.getString(1));
+            System.out.println(activityToDo.toString());
+
             //On ferme le cursor
-            c.close();
+            //c.close();
 
             //On retourne le livre
             return activityToDo;
@@ -202,7 +207,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             cur.moveToFirst();
 
             while (cur.isAfterLast() == false) {
-                questions.add(cursorToQuestion(cur));
+                System.out.println("BOOOOWWAAA fillActivitiesToDoFromDB" + cur.getString(1));
+                activities.add(cursorToActivityToDo(cur));
+                System.out.println("BOOOOWWAAA fillActivitiesToDoFromDB" + cur.getString(1));
                 cur.moveToNext();
             }
 
@@ -211,7 +218,24 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         }
 
 
+        //Impact d'une activité selon une question
+        /*Answer getImpactActivity(int idActivity, Question question)
+        {
+            //Lecture en BD
+            int rand = (int)(Math.random() * 3);
 
+            switch (rand)
+            {
+                case 0:
+                    return Answer.Yes;
+                case 1:
+                    return Answer.NoMatter;
+                case 2:
+                    return Answer.No;
+                default:
+                    return Answer.NoMatter;
+            }
+        }*/
 
     @Override
         public synchronized void close() {

@@ -28,4 +28,8 @@
             android:drawablePadding="5dp"
             android:imeOptions="actionDone"
             />
+<<<<<<< HEAD
+</LinearLayout><!-- From: file:/D:/vivie/IMAC%203/Android-projet/Je-m-ennuie-le-projet/Je-m-ennuie/facebook/res/layout/com_facebook_search_bar_layout.xml -->
+=======
 </LinearLayout><!-- From: file:/C:/Users/Marie/Documents/GitHub/Je-m-ennuie/facebook/res/layout/com_facebook_search_bar_layout.xml -->
+>>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
