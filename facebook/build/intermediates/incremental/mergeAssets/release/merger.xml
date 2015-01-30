@@ -2,10 +2,17 @@
 <merger version="2" >
 
     <dataSet config="main" >
+<<<<<<< HEAD
         <source path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\src\main\assets" />
     </dataSet>
     <dataSet config="release" >
         <source path="D:\vivie\IMAC 3\Android-projet\Je-m-ennuie-le-projet\Je-m-ennuie\facebook\src\release\assets" />
+=======
+        <source path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\src\main\assets" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="C:\Users\Marie\Documents\GitHub\Je-m-ennuie\facebook\src\release\assets" />
+>>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
     </dataSet>
 
 </merger>
