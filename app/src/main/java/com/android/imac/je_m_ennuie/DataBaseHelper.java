@@ -211,7 +211,24 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         }
 
 
+        //Impact d'une activité selon une question
+        Answer getImpactActivity(int idActivity, Question question)
+        {
+            //Lecture en BD
+            int rand = (int)(Math.random() * 3);
 
+            switch (rand)
+            {
+                case 0:
+                    return Answer.Yes;
+                case 1:
+                    return Answer.NoMatter;
+                case 2:
+                    return Answer.No;
+                default:
+                    return Answer.NoMatter;
+            }
+        }
 
     @Override
         public synchronized void close() {
