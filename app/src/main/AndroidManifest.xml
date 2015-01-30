@@ -3,16 +3,22 @@
     package="com.android.imac.je_m_ennuie" >
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <application
+    <!--<application
         android:allowBackup="true"
         android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >-->
+    <application
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         >
         <!-- Activité principale -->
         <activity
-            android:name=".JemennuieActivity"
+            android:name=".TestDatabaseActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
