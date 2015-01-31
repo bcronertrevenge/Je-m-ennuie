@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Logiciels/Android/Projets/Je-m-ennuie/facebook/res/values-es/strings.xml -->
-    <eat-comment/>
+
+<<<<<<< HEAD
+    <!-- From: file:/D:/vivie/IMAC%203/Android-projet/Je-m-ennuie-le-projet/Je-m-ennuie/facebook/res/values-es/strings.xml -->
+=======
+    <!-- From: file:/C:/Users/Marie/Documents/GitHub/Je-m-ennuie/facebook/res/values-es/strings.xml -->
+>>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
+    <eat-comment />
+
     <string name="com_facebook_choose_friends">Elige Amigos</string>
     <string name="com_facebook_dialogloginactivity_ok_button">Aceptar</string>
     <string name="com_facebook_image_download_unknown_error">Error al descargar la imagen.</string>
@@ -28,4 +34,5 @@
     <string name="com_facebook_usersettingsfragment_log_in_button">Iniciar sesión…</string>
     <string name="com_facebook_usersettingsfragment_logged_in">Sesión iniciada</string>
     <string name="com_facebook_usersettingsfragment_not_logged_in">No has iniciado sesión</string>
+
 </resources>
