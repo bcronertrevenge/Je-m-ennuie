@@ -15,22 +15,22 @@ import java.util.Map;
  */
 public class Game implements Serializable {
 
+    static private final long serialVersionUID = 6L;
     public static final int NB_QUESTIONS_PER_ROUND = 3;
     public static final int NB_ROUND = 2;
     public static final int NB_ACTIVITIES_TO_SHOW = 10;
 
     LinkedList<ActivityToDo> activityGameArray; //Les activités possibles restantes
     ArrayList<Question> questionGameArray; //Les questions qui n'ont pas encore été posées
-    DataBaseHelper dataBase; //La base de donnée avec les listes
+
     HashMap< Question, Answer > questionAnsweredMap; //Les réponses données par le joueur pour chaque question
     LinkedList<ActivityToDo> activityToShowArray; //Les activités à montrer
     int roundNumber; //Le numéro du round
     int nbQuestionAnswered; //Le nombre de question posées
     int idCurrentQuestion; //L'index de la question courante dans l'array de question
 
-    Game(DataBaseHelper db)
+    public Game()
     {
-        dataBase = db;
         activityGameArray = new LinkedList<ActivityToDo>();
         questionGameArray = new ArrayList<Question>();
         questionAnsweredMap = new HashMap<Question, Answer>();
@@ -42,7 +42,7 @@ public class Game implements Serializable {
     }
 
     //Commencement d'un nouveau jeu
-    public void newGame()
+    public void newGame(DataBaseHelper dataBase)
     {
         //Nettoyage des différentes listes
         activityGameArray.clear();
@@ -71,7 +71,7 @@ public class Game implements Serializable {
     }
 
     //Repondre à la question courante
-    void answerQuestion(Answer answer)
+    void answerQuestion(Answer answer, DataBaseHelper dataBase)
     {
         if( idCurrentQuestion == -1 )
         {
@@ -91,7 +91,7 @@ public class Game implements Serializable {
         //Si on a posé assez de questions, on fini le round
         if( nbQuestionAnswered >= NB_QUESTIONS_PER_ROUND )
         {
-            roundFinished();
+            roundFinished(dataBase);
         }
         //Sinon, on repose une autre question
         else {
@@ -100,14 +100,14 @@ public class Game implements Serializable {
     }
 
     //Fin du round
-    void roundFinished()
+    void roundFinished(DataBaseHelper dataBase)
     {
         roundNumber++;
 
         System.out.println("Round " + roundNumber);
 
         // Remove des activities à faire
-        removeActivities();
+        removeActivities(dataBase);
 
         //Selection des activités à montrer
         searchPossibleActivities();
@@ -133,7 +133,7 @@ public class Game implements Serializable {
     }
 
     //Suppression des activités à la fin du round en fonction des decisions du joueur.
-    void removeActivities()
+    void removeActivities(DataBaseHelper dataBase)
     {
 
         //Pour chaque reponse à une question

@@ -27,16 +27,9 @@ import java.security.NoSuchAlgorithmException;
 public class JemennuieActivity extends ActionBarActivity {
 
     private static final String DB_NAME = "Jemennuie_database.sqlite3";
-    public static DataBaseHelper myDbHelper;
-    public static Game game;
+    public DataBaseHelper myDbHelper;
+    public Game game;
 
-    public static DataBaseHelper getDbHelper(){
-        return myDbHelper;
-    }
-
-    public static Game getGame(){
-        return game;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,11 +48,7 @@ public class JemennuieActivity extends ActionBarActivity {
         myDbHelper.createDataBase();
         System.out.println("Database created ! ");
 
-        // Création du jeu
-        game = new Game(myDbHelper);
-        Toast.makeText(this,game.idCurrentQuestion,Toast.LENGTH_LONG);
-
-        /*try {
+        try {
             myDbHelper.openDataBase();
 
             // test ArrayList Question
@@ -70,7 +59,11 @@ public class JemennuieActivity extends ActionBarActivity {
         }catch(SQLException sqle){
             System.out.println("Database not opened ! :( ");
             throw sqle;
-        }*/
+        }
+
+        // Création du jeu
+        game = new Game();
+        System.out.println("ID Question" + game.idCurrentQuestion);
 
         /* fermer la bdd
         myDbHelper.close();*/

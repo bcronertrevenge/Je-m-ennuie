@@ -1,9 +1,11 @@
 package com.android.imac.je_m_ennuie;
 
+import java.io.Serializable;
+
 /**
  * Created by bruno on 01/12/2014.
  */
-public class ActivityToDo {
+public class ActivityToDo implements Serializable {
     String nameActivity;
     int idActivity;
     boolean isFavorite;

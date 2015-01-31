@@ -33,7 +33,6 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
             "Le texte un tout petit plus long de la jolie petite question 10 ?",
     };
 
-    Game mainGame=JemennuieActivity.getGame();
 
     int num_question=0;
     TextView question;
@@ -76,6 +75,7 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
         button_maybe.setOnClickListener(this);
         button_no.setOnClickListener(this);
 
+        System.out.println("Je passe dans le display");
         /*Intent intent = getIntent();
         Game mainGame = (Game) intent.getExtras().getSerializable("game");
         if(mainGame==null)
