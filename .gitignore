@@ -1,10 +1,10 @@
 *.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries/*
-.DS_Store
 /build/*
 /facebook/*
 /gradle/*
 /app/build.gradle
 build.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries/*
+.DS_Store
