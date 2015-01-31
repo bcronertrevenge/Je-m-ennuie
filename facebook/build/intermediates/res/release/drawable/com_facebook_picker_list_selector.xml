@@ -25,8 +25,4 @@
     <item android:state_focused="true"                                                             android:drawable="@drawable/com_facebook_picker_list_focused" />
 
 </selector>
-<<<<<<< HEAD
-<!-- From: file:/D:/vivie/IMAC%203/Android-projet/Je-m-ennuie-le-projet/Je-m-ennuie/facebook/res/drawable/com_facebook_picker_list_selector.xml -->
-=======
-<!-- From: file:/C:/Users/Marie/Documents/GitHub/Je-m-ennuie/facebook/res/drawable/com_facebook_picker_list_selector.xml -->
->>>>>>> 85bf4d3fdd1de81070b90d958f1bc2b81e2eaa1d
+<!-- From: file:/D:/Logiciels/Android/Projets/Je-m-ennuie/facebook/res/drawable/com_facebook_picker_list_selector.xml -->

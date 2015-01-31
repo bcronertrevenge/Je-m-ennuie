@@ -28,7 +28,7 @@ public class TestDatabaseActivity extends Activity{
         setContentView(R.layout.activity_jemennuie);
 
 
-        DataBaseHelper myDbHelper = new DataBaseHelper(this, DB_NAME);
+        /*DataBaseHelper myDbHelper = DataBaseHelper.getInstance(getContext());
 
         System.out.println("Debut Database");
         myDbHelper.createDataBase();
@@ -39,7 +39,7 @@ public class TestDatabaseActivity extends Activity{
             // ouverture de la base de données
             myDbHelper.openDataBase();
 
-            /*
+
             // test succès ouverture bdd
             String dbname = myDbHelper.getDatabaseName();
             System.out.println("Open Database" + dbname);
@@ -58,7 +58,7 @@ public class TestDatabaseActivity extends Activity{
             System.out.println(activityToDo.toString());
             //Toast.makeText(this, "HEYYY YAAAA activité : "+activityToDo.toString(), Toast.LENGTH_LONG).show();
 
-            */
+
 // A FAIRE !            // test LinkedList ActivityToDo
 
             myDbHelper.fillActivitiesToDoFromDB();
@@ -91,7 +91,7 @@ public class TestDatabaseActivity extends Activity{
         }
 
         // fermer la bdd
-        myDbHelper.close();
+        myDbHelper.close();*/
 
     }
 

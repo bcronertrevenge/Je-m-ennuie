@@ -25,6 +25,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     private static String DB_NAME = "Jemennuie_database";
 
+    private static DataBaseHelper sInstance;
+
     public ArrayList<Question> questions;
     public LinkedList<ActivityToDo> activities;
 
@@ -34,11 +36,19 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     private final Context myContext;
 
+    public static DataBaseHelper getInstance(Context context) {
+
+        if (sInstance == null) {
+            sInstance = new DataBaseHelper(context.getApplicationContext(), DB_NAME);
+        }
+        return sInstance;
+    }
+
         public SQLiteDatabase getDb() {
             return myDataBase;
         }
 
-        public DataBaseHelper(Context context, String databaseName) {
+        private DataBaseHelper(Context context, String databaseName) {
             super(context, databaseName, null, 1);
             myContext = context;
             //Write a full path to the databases of your application
