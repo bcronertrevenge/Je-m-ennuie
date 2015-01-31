@@ -59,10 +59,11 @@ public class TestDatabaseActivity extends Activity{
             //Toast.makeText(this, "HEYYY YAAAA activité : "+activityToDo.toString(), Toast.LENGTH_LONG).show();
 
             */
-// A FAIRE !            // test LinkedList ActivityToDo
+            // test LinkedList ActivityToDo
 
             myDbHelper.fillActivitiesToDoFromDB();
             System.out.println("taille de activities "+myDbHelper.activities.size());
+
             /*for (int i = 0; i<myDbHelper.activities.size(); ++i){
                 Toast.makeText(this, " Activité numéro "+ myDbHelper.activities.get(i).getIdActivity() +
                                 " énoncé : "+myDbHelper.activities.get(i).getNameActivity()+
@@ -84,6 +85,8 @@ public class TestDatabaseActivity extends Activity{
             System.out.println("pouet pouet ");
             Answer testAnswer = myDbHelper.getImpactActivity(25,1);
             System.out.println(testAnswer.toString());
+            Answer testAnswer2 = myDbHelper.getImpactActivity(17, 0);
+            System.out.println(testAnswer2.toString());
 
 
         }catch(SQLException sqle){

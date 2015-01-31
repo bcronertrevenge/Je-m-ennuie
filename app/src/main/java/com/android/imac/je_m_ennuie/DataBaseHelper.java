@@ -228,7 +228,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             System.out.println("idActivity " + idActivity);
             System.out.println("idQuestion " + idQuestion);
             int zero = 0;
-            Cursor cur = this.myDataBase.rawQuery("SELECT * FROM Activity WHERE _id ="+zero+" AND favorite = "+zero,null);
+            Cursor cur = this.myDataBase.rawQuery("SELECT impact FROM ActivityQuestion WHERE id_activity = "+idActivity+ " AND id_question ="+ idQuestion,null);
             System.out.println("getImpactActivity");
             System.out.println("taille colonne cursor "+ cur.getColumnCount());
             System.out.println("taille cursor "+ cur.getCount());
@@ -245,7 +245,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 cur.moveToFirst();
 
                 System.out.println("getImpactActivity cur != null");
-                int impact = cur.getInt(2);
+                int impact = cur.getInt(0);
                 System.out.println("getImpactActivity impact = "+ impact);
                 switch (impact) {
                     case 0:
