@@ -26,7 +26,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class JemennuieActivity extends ActionBarActivity {
 
-    private static final String DB_NAME = "Jemennuie_database.sqlite3";
+    public static final String DB_NAME = "Jemennuie_database.sqlite3";
     public DataBaseHelper myDbHelper;
     public Game game;
 
@@ -41,7 +41,7 @@ public class JemennuieActivity extends ActionBarActivity {
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
-        myDbHelper = new DataBaseHelper(this,DB_NAME);
+        myDbHelper = DataBaseHelper.getInstance(this);
 
         // Création de la BDD
         System.out.println("Debut Database");
@@ -62,8 +62,7 @@ public class JemennuieActivity extends ActionBarActivity {
         }
 
         // Création du jeu
-        game = new Game();
-        System.out.println("ID Question" + game.idCurrentQuestion);
+        game = Game.getInstance(this);
 
         /* fermer la bdd
         myDbHelper.close();*/
@@ -91,7 +90,6 @@ public class JemennuieActivity extends ActionBarActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(JemennuieActivity.this, GameDisplayActivity.class);
-                intent.putExtra("game",game);
                 startActivity(intent);
             }
         });

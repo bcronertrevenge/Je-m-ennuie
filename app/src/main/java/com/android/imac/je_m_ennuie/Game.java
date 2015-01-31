@@ -1,5 +1,6 @@
 package com.android.imac.je_m_ennuie;
 
+import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -13,12 +14,13 @@ import java.util.Map;
 /**
  * Created by bruno on 01/12/2014.
  */
-public class Game implements Serializable {
+public class Game {
 
-    static private final long serialVersionUID = 6L;
     public static final int NB_QUESTIONS_PER_ROUND = 3;
     public static final int NB_ROUND = 2;
     public static final int NB_ACTIVITIES_TO_SHOW = 10;
+
+    private static Game sInstance;
 
     LinkedList<ActivityToDo> activityGameArray; //Les activités possibles restantes
     ArrayList<Question> questionGameArray; //Les questions qui n'ont pas encore été posées
@@ -29,7 +31,17 @@ public class Game implements Serializable {
     int nbQuestionAnswered; //Le nombre de question posées
     int idCurrentQuestion; //L'index de la question courante dans l'array de question
 
-    public Game()
+    private final Context myContext;
+
+    public static Game getInstance(Context context) {
+
+        if (sInstance == null) {
+            sInstance = new Game(context);
+        }
+        return sInstance;
+    }
+
+    private Game(Context context)
     {
         activityGameArray = new LinkedList<ActivityToDo>();
         questionGameArray = new ArrayList<Question>();
@@ -39,10 +51,12 @@ public class Game implements Serializable {
         roundNumber = 0;
         idCurrentQuestion = -1;
         nbQuestionAnswered = 0;
+
+        myContext = context;
     }
 
     //Commencement d'un nouveau jeu
-    public void newGame(DataBaseHelper dataBase)
+    public void newGame()
     {
         //Nettoyage des différentes listes
         activityGameArray.clear();
@@ -50,6 +64,8 @@ public class Game implements Serializable {
         questionAnsweredMap.clear();
 
         //Recuperation de toutes les activités et questions
+        DataBaseHelper dataBase = DataBaseHelper.getInstance(myContext);
+
         activityGameArray = (LinkedList<ActivityToDo>)dataBase.activities.clone();
         questionGameArray = (ArrayList<Question>)dataBase.questions.clone();
 
@@ -71,7 +87,7 @@ public class Game implements Serializable {
     }
 
     //Repondre à la question courante
-    void answerQuestion(Answer answer, DataBaseHelper dataBase)
+    void answerQuestion(Answer answer)
     {
         if( idCurrentQuestion == -1 )
         {
@@ -91,7 +107,7 @@ public class Game implements Serializable {
         //Si on a posé assez de questions, on fini le round
         if( nbQuestionAnswered >= NB_QUESTIONS_PER_ROUND )
         {
-            roundFinished(dataBase);
+            roundFinished();
         }
         //Sinon, on repose une autre question
         else {
@@ -100,14 +116,14 @@ public class Game implements Serializable {
     }
 
     //Fin du round
-    void roundFinished(DataBaseHelper dataBase)
+    void roundFinished()
     {
         roundNumber++;
 
         System.out.println("Round " + roundNumber);
 
         // Remove des activities à faire
-        removeActivities(dataBase);
+        removeActivities();
 
         //Selection des activités à montrer
         searchPossibleActivities();
@@ -133,7 +149,7 @@ public class Game implements Serializable {
     }
 
     //Suppression des activités à la fin du round en fonction des decisions du joueur.
-    void removeActivities(DataBaseHelper dataBase)
+    void removeActivities()
     {
 
         //Pour chaque reponse à une question
@@ -149,6 +165,7 @@ public class Game implements Serializable {
 
             //Liste des activités à supprimer
             LinkedList<ActivityToDo> activitiesToSupress = new LinkedList<ActivityToDo>();
+            DataBaseHelper dataBase = DataBaseHelper.getInstance(myContext);
 
             for(ActivityToDo activityToDo : activityGameArray )
             {

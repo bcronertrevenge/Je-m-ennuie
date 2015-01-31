@@ -23,7 +23,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     //The Android's default system path of your application database.
     private static String DB_PATH = "/data/data/com.android.imac.je_m_ennuie/databases/";
 
-    private static String DB_NAME = "Jemennuie_database";
+    private static String DB_NAME;
 
     private static DataBaseHelper sInstance;
 
@@ -39,7 +39,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static DataBaseHelper getInstance(Context context) {
 
         if (sInstance == null) {
-            sInstance = new DataBaseHelper(context.getApplicationContext(), DB_NAME);
+            sInstance = new DataBaseHelper(context.getApplicationContext());
         }
         return sInstance;
     }
@@ -48,16 +48,28 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             return myDataBase;
         }
 
-        private DataBaseHelper(Context context, String databaseName) {
-            super(context, databaseName, null, 1);
+        public DataBaseHelper(Context context) {
+            super(context, JemennuieActivity.DB_NAME, null, 1);
             myContext = context;
             //Write a full path to the databases of your application
             String packageName = context.getPackageName();
             DB_PATH = String.format("//data//data//%s//databases//", packageName);
-            DB_NAME = databaseName;
+            DB_NAME = JemennuieActivity.DB_NAME;
             questions = new ArrayList<Question>();
             activities = new LinkedList<ActivityToDo>();
             openDataBase();
+        }
+
+        public void isDataEmpty()
+        {
+            if(myDataBase == null)
+            {
+                System.out.println("Data null");
+            }
+            else
+            {
+                System.out.println("Data not null");
+            }
         }
 
         //This piece of code will create a database if it’s not yet created

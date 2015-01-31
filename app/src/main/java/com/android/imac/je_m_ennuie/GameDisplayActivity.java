@@ -76,12 +76,9 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
         button_no.setOnClickListener(this);
 
         System.out.println("Je passe dans le display");
-        /*Intent intent = getIntent();
-        Game mainGame = (Game) intent.getExtras().getSerializable("game");
-        if(mainGame==null)
-            Toast.makeText(this,"ça marche paaaas",Toast.LENGTH_LONG);
-        else
-            Toast.makeText(this,mainGame.idCurrentQuestion,Toast.LENGTH_LONG);*/
+        Game game = Game.getInstance(this);
+        DataBaseHelper database = DataBaseHelper.getInstance(this);
+
 
 
     }
