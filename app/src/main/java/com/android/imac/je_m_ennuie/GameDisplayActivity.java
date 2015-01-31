@@ -1,6 +1,7 @@
 package com.android.imac.je_m_ennuie;
 
 import android.app.Activity;
+import android.app.Activity.*;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Canvas;
@@ -31,6 +32,7 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
             "Le texte un tout petit plus long de la jolie petite question 9 ?",
             "Le texte un tout petit plus long de la jolie petite question 10 ?",
     };
+
 
     int num_question=0;
     TextView question;
@@ -72,6 +74,14 @@ public class GameDisplayActivity extends Activity implements View.OnClickListene
         button_yes.setOnClickListener(this);
         button_maybe.setOnClickListener(this);
         button_no.setOnClickListener(this);
+
+        System.out.println("Je passe dans le display");
+        /*Intent intent = getIntent();
+        Game mainGame = (Game) intent.getExtras().getSerializable("game");
+        if(mainGame==null)
+            Toast.makeText(this,"ça marche paaaas",Toast.LENGTH_LONG);
+        else
+            Toast.makeText(this,mainGame.idCurrentQuestion,Toast.LENGTH_LONG);*/
 
 
     }

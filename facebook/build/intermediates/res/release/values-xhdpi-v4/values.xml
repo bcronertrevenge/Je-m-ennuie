@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Logiciels/Android/Projets/Je-m-ennuie/facebook/res/values-xhdpi/dimens.xml -->
-    <eat-comment/>
+
+    <!-- From: file:/C:/Users/Marie/Documents/GitHub/Je-m-ennuie/facebook/res/values-xhdpi/dimens.xml -->
+    <eat-comment />
+
     <dimen name="com_facebook_picker_divider_width">2px</dimen>
+
 </resources>
