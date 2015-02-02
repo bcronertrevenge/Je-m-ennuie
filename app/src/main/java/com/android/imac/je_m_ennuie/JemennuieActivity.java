@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
-import android.database.SQLException;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -26,11 +25,6 @@ import java.security.NoSuchAlgorithmException;
 
 public class JemennuieActivity extends ActionBarActivity {
 
-    public static final String DB_NAME = "Jemennuie_database.sqlite3";
-    public DataBaseHelper myDbHelper;
-    public Game game;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,33 +34,6 @@ public class JemennuieActivity extends ActionBarActivity {
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         System.out.println("Debut du jeu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-
-        myDbHelper = DataBaseHelper.getInstance(this);
-
-        // Création de la BDD
-        System.out.println("Debut Database");
-        myDbHelper.createDataBase();
-        System.out.println("Database created ! ");
-
-        try {
-            myDbHelper.openDataBase();
-
-            // test ArrayList Question
-
-            myDbHelper.fillQuestionsFromDB();
-            myDbHelper.fillActivitiesToDoFromDB();
-
-        }catch(SQLException sqle){
-            System.out.println("Database not opened ! :( ");
-            throw sqle;
-        }
-
-        // Création du jeu
-        game = Game.getInstance(this);
-
-        /* fermer la bdd
-        myDbHelper.close();*/
-
         System.out.println(printKeyHash(this));
 
         /* Récupération des éléments de la vue */
@@ -108,6 +75,13 @@ public class JemennuieActivity extends ActionBarActivity {
         });
 
 
+
+        Game game = new Game();
+        game.newGame();
+
+        game.answerQuestion(Answer.Yes);
+        game.answerQuestion(Answer.NoMatter);
+        game.answerQuestion(Answer.No);
 
     }
 

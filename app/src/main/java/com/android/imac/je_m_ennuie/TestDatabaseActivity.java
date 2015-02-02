@@ -28,7 +28,7 @@ public class TestDatabaseActivity extends Activity{
         setContentView(R.layout.activity_jemennuie);
 
 
-        /*DataBaseHelper myDbHelper = DataBaseHelper.getInstance(getContext());
+        DataBaseHelper myDbHelper = new DataBaseHelper(this, DB_NAME);
 
         System.out.println("Debut Database");
         myDbHelper.createDataBase();
@@ -39,7 +39,7 @@ public class TestDatabaseActivity extends Activity{
             // ouverture de la base de données
             myDbHelper.openDataBase();
 
-
+            /*
             // test succès ouverture bdd
             String dbname = myDbHelper.getDatabaseName();
             System.out.println("Open Database" + dbname);
@@ -58,31 +58,35 @@ public class TestDatabaseActivity extends Activity{
             System.out.println(activityToDo.toString());
             //Toast.makeText(this, "HEYYY YAAAA activité : "+activityToDo.toString(), Toast.LENGTH_LONG).show();
 
-
-// A FAIRE !            // test LinkedList ActivityToDo
+            */
+            // test LinkedList ActivityToDo
 
             myDbHelper.fillActivitiesToDoFromDB();
             System.out.println("taille de activities "+myDbHelper.activities.size());
-            for (int i = 0; i<myDbHelper.activities.size(); ++i){
+
+            /*for (int i = 0; i<myDbHelper.activities.size(); ++i){
                 Toast.makeText(this, " Activité numéro "+ myDbHelper.activities.get(i).getIdActivity() +
                                 " énoncé : "+myDbHelper.activities.get(i).getNameActivity()+
                                 " favori : "+myDbHelper.activities.get(i).getFavorite()+
                                 " découvert : "+myDbHelper.activities.get(i).getDiscovered(),
                         Toast.LENGTH_LONG).show();
-            }
+            }*/
 
 
             // test ArrayList Question
 
             myDbHelper.fillQuestionsFromDB();
             System.out.println("taille de questions "+myDbHelper.questions.size());
-            for (int i = 0; i<myDbHelper.questions.size(); ++i){
+            /*for (int i = 0; i<myDbHelper.questions.size(); ++i){
                 Toast.makeText(this, " Question numéro "+ myDbHelper.questions.get(i).getId() +" énoncé : "+myDbHelper.questions.get(i).toString(), Toast.LENGTH_LONG).show();
-            }
+            }*/
 
-
-
-
+            // test Impact
+            System.out.println("pouet pouet ");
+            Answer testAnswer = myDbHelper.getImpactActivity(25,1);
+            System.out.println(testAnswer.toString());
+            Answer testAnswer2 = myDbHelper.getImpactActivity(17, 0);
+            System.out.println(testAnswer2.toString());
 
 
         }catch(SQLException sqle){
@@ -91,7 +95,7 @@ public class TestDatabaseActivity extends Activity{
         }
 
         // fermer la bdd
-        myDbHelper.close();*/
+        myDbHelper.close();
 
     }
 

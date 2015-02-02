@@ -1,11 +1,9 @@
 package com.android.imac.je_m_ennuie;
 
-import java.io.Serializable;
-
 /**
  * Created by bruno on 01/12/2014.
  */
-public class Question implements Serializable {
+public class Question {
     String nameQuestion;
     int id;
 

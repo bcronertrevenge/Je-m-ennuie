@@ -23,9 +23,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     //The Android's default system path of your application database.
     private static String DB_PATH = "/data/data/com.android.imac.je_m_ennuie/databases/";
 
-    private static String DB_NAME;
-
-    private static DataBaseHelper sInstance;
+    private static String DB_NAME = "Jemennuie_database";
 
     public ArrayList<Question> questions;
     public LinkedList<ActivityToDo> activities;
@@ -36,46 +34,29 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     private final Context myContext;
 
-    public static DataBaseHelper getInstance(Context context) {
-
-        if (sInstance == null) {
-            sInstance = new DataBaseHelper(context.getApplicationContext());
-        }
-        return sInstance;
-    }
-
         public SQLiteDatabase getDb() {
             return myDataBase;
         }
 
-        public DataBaseHelper(Context context) {
-            super(context, JemennuieActivity.DB_NAME, null, 1);
+        public DataBaseHelper(Context context, String databaseName) {
+            super(context, databaseName, null, 1);
             myContext = context;
             //Write a full path to the databases of your application
             String packageName = context.getPackageName();
             DB_PATH = String.format("//data//data//%s//databases//", packageName);
-            DB_NAME = JemennuieActivity.DB_NAME;
+            DB_NAME = databaseName;
             questions = new ArrayList<Question>();
             activities = new LinkedList<ActivityToDo>();
             openDataBase();
         }
 
-        public void isDataEmpty()
-        {
-            if(myDataBase == null)
-            {
-                System.out.println("Data null");
-            }
-            else
-            {
-                System.out.println("Data not null");
-            }
-        }
-
+        /**************
+         * TODO : decommenter le if
+         * ************/
         //This piece of code will create a database if it’s not yet created
         public void createDataBase() {
-            boolean dbExist = checkDataBase();
-            if (!dbExist) {
+        //    boolean dbExist = checkDataBase();
+        //    if (!dbExist) {
                 this.getReadableDatabase();
                 try {
                     copyDataBase();
@@ -83,9 +64,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     Log.e(this.getClass().toString(), "Copying error");
                     throw new Error("Error copying database!");
                 }
-            } else {
-                Log.i(this.getClass().toString(), "Database already exists");
-            }
+        //    } else {
+        //        Log.i(this.getClass().toString(), "Database already exists");
+        //    }
         }
 
         //Performing a database existence check
@@ -173,7 +154,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             cur.moveToFirst();
 
             while (cur.isAfterLast() == false) {
-                System.out.println("BOOOOWWAAA " + cur.getString(1));
                 questions.add(cursorToQuestion(cur));
                 cur.moveToNext();
             }
@@ -211,13 +191,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             activityToDo.setFavorite(favorite);
             activityToDo.setDiscovered(discover);
 
-            System.out.println("BOOOOWWAAA cursorToActivityToDo" + c.getString(1));
-            System.out.println(activityToDo.toString());
-
             //On ferme le cursor
             //c.close();
 
-            //On retourne le livre
+            //On retourne l'activité
             return activityToDo;
         }
 
@@ -229,9 +206,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             cur.moveToFirst();
 
             while (cur.isAfterLast() == false) {
-                System.out.println("BOOOOWWAAA fillActivitiesToDoFromDB" + cur.getString(1));
                 activities.add(cursorToActivityToDo(cur));
-                System.out.println("BOOOOWWAAA fillActivitiesToDoFromDB" + cur.getString(1));
                 cur.moveToNext();
             }
 
@@ -241,23 +216,33 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
 
         //Impact d'une activité selon une question
-        /*Answer getImpactActivity(int idActivity, Question question)
+        Answer getImpactActivity(int idActivity, int  idQuestion)
         {
             //Lecture en BD
-            int rand = (int)(Math.random() * 3);
+            Cursor cur = this.myDataBase.rawQuery("SELECT impact FROM ActivityQuestion WHERE id_activity = "+idActivity+ " AND id_question ="+ idQuestion,null);
 
-            switch (rand)
-            {
-                case 0:
-                    return Answer.Yes;
-                case 1:
-                    return Answer.NoMatter;
-                case 2:
-                    return Answer.No;
-                default:
-                    return Answer.NoMatter;
+            // si pas de solution, on retourne 'pas d'importance'
+            if (cur.getCount() == 0){
+                return Answer.NoMatter;
             }
-        }*/
+            // sinon on prend la correspondance dans la bdd
+            else {
+                cur.moveToFirst();
+                int impact = cur.getInt(0);
+
+                switch (impact) {
+                    case 0:
+                        return Answer.No;
+                    case 1:
+                        return Answer.Yes;
+                    case 2:
+                        return Answer.NoMatter;
+                    default:
+                        return Answer.NoMatter;
+                }
+            }
+
+        }
 
     @Override
         public synchronized void close() {
