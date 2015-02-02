@@ -50,10 +50,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             openDataBase();
         }
 
+        /**************
+         * TODO : decommenter le if
+         * ************/
         //This piece of code will create a database if it’s not yet created
         public void createDataBase() {
-            boolean dbExist = checkDataBase();
-            if (!dbExist) {
+        //    boolean dbExist = checkDataBase();
+        //    if (!dbExist) {
                 this.getReadableDatabase();
                 try {
                     copyDataBase();
@@ -61,9 +64,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                     Log.e(this.getClass().toString(), "Copying error");
                     throw new Error("Error copying database!");
                 }
-            } else {
-                Log.i(this.getClass().toString(), "Database already exists");
-            }
+        //    } else {
+        //        Log.i(this.getClass().toString(), "Database already exists");
+        //    }
         }
 
         //Performing a database existence check
